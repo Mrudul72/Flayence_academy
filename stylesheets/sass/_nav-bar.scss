@@ -22,13 +22,6 @@
         
     }
     .nav-btn{
-        width: 10vw;
-        height: 3vw;
-        border: solid 0.20vw $primary-color;
-        color: $primary-color;
-        font-weight: 500;
-        background-color: transparent;
-        border-radius: 3px;
-        font-size: 1vw;
+        @include outline-button($primary-color, 1vw);
     }
 }

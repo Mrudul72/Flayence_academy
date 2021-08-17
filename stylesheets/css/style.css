@@ -34,8 +34,7 @@
 }
 
 .nav-bar .nav-btn {
-  width: 10vw;
-  height: 3vw;
+  padding: 0.75vw 1.75vw;
   border: solid 0.2vw #515E63;
   color: #515E63;
   font-weight: 500;
@@ -46,9 +45,8 @@
 
 .hero {
   height: 100vh;
-  width: 100vw;
-  overflow-y: none;
-  overflow-x: none;
+  max-width: 100%;
+  overflow-x: hidden;
   background-image: url("/assets/images/flayence.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -88,18 +86,18 @@
   margin-top: 1vw;
   font-size: 0.80vw;
   font-weight: 300;
+  letter-spacing: 0.05vw;
 }
 
 .hero .hero-content .hero-btn {
-  width: 10vw;
-  height: 3vw;
+  padding: 0.75vw 1.75vw;
   border: solid 0.2vw #FFFFFF;
   color: #FFFFFF;
   font-weight: 500;
   background-color: transparent;
   border-radius: 3px;
+  font-size: 0.8vw;
   margin-top: 1vw;
-  font-size: 0.80vw;
 }
 
 * {
@@ -110,5 +108,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */

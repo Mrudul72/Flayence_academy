@@ -3,6 +3,16 @@ $secondary-color: #E6EDFA;
 $text-dark: #011E56;
 $text-light: #FFFFFF;
 
+@mixin outline-button($btn-color, $font-size) {
+    padding: 0.75vw 1.75vw;
+    border: solid 0.20vw $btn-color;
+    color: $btn-color;
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 3px;
+    font-size: $font-size;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
 
 @import "./nav-bar";
@@ -16,6 +26,9 @@ $text-light: #FFFFFF;
     margin: 0;
     padding: 0;
 }
-
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 
