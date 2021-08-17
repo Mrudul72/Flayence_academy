@@ -1,0 +1,21 @@
+$primary-color : #515E63;
+$secondary-color: #E6EDFA;
+$text-dark: #011E56;
+$text-light: #FFFFFF;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+@import "./nav-bar";
+@import "./hero-section";
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
