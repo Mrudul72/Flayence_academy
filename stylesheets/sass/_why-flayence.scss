@@ -4,7 +4,7 @@
     align-items: flex-start;
     justify-content: space-between;
     .wf_content{
-        padding: 0.20vw 1.5vw;
+        margin: 0.20vw 1.5vw;
         .wfhead{
             font-family: 'Open Sans', sans-serif;
             font-style: normal;
@@ -16,6 +16,7 @@
         .wftext{
             margin-top: 0.5vw;
             font-weight: 300;
+            color: $text-dark;
         }
     }
 }

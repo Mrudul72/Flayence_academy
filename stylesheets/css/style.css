@@ -114,7 +114,7 @@
 }
 
 .col-container .wf_content {
-  padding: 0.20vw 1.5vw;
+  margin: 0.20vw 1.5vw;
 }
 
 .col-container .wf_content .wfhead {
@@ -129,6 +129,7 @@
 .col-container .wf_content .wftext {
   margin-top: 0.5vw;
   font-weight: 300;
+  color: #011E56;
 }
 
 .why_flayence {
