@@ -2,6 +2,10 @@
 .col-container{
     display: flex;
     align-items: flex-start;
+
+    .wf_img{
+        width: 5vw;
+    }
     
     .wf_content{
         margin: 0.20vw 1.5vw;
