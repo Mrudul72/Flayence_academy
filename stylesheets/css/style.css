@@ -134,7 +134,7 @@
 }
 
 .why_flayence {
-  padding: 2vw;
+  padding: 4vw;
 }
 
 .why_flayence h1 {
@@ -145,6 +145,64 @@
   color: #011E56;
   text-align: center;
   margin-bottom: 2vw;
+}
+
+.packages {
+  height: 28vw;
+  width: 22vw;
+  padding: 1vw;
+  background-color: #F3F8FC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages .pkg-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2vw;
+  color: #011E56;
+  letter-spacing: 0.05vw;
+}
+
+.packages .pkg-contents-container {
+  font-weight: 300;
+  color: #011E56;
+  font-size: 0.80vw;
+}
+
+.active-pkg {
+  background-color: #515E63;
+  color: #FFFFFF;
+  height: 32vw;
+  -webkit-transform: translateY(-2vw);
+          transform: translateY(-2vw);
+}
+
+.active-pkg .pkg-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2vw;
+  color: #FFFFFF;
+  letter-spacing: 0.05vw;
+}
+
+.active-pkg .pkg-contents-container {
+  font-weight: 300;
+  color: #FFFFFF;
+  font-size: 0.80vw;
 }
 
 * {

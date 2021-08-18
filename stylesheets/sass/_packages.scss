@@ -1,0 +1,28 @@
+.packages{
+    height: 28vw;
+    width: 22vw;
+    padding: 1vw;
+    background-color: $secondary-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .pkg-heading{
+        @include content-heading($text-dark);
+    }
+    .pkg-contents-container{
+        @include content-text($text-dark);
+    }
+}
+.active-pkg{
+    background-color: $primary-color;
+    color: $text-light;
+    height: 32vw;
+    transform: translateY(-2vw);
+    .pkg-heading{
+        @include content-heading($text-light);
+    }
+    .pkg-contents-container{
+        @include content-text($text-light);
+    }
+}

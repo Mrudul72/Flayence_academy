@@ -10,24 +10,18 @@
     .wf_content{
         margin: 0.20vw 1.5vw;
         .wfhead{
-            font-family: 'Open Sans', sans-serif;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 1.2vw;
-            color:$text-dark;
-            letter-spacing: 0.05vw;
+            @include content-heading($text-dark);
+
         }
         .wftext{
             margin-top: 0.5vw;
-            font-weight: 300;
-            color: $text-dark;
-            font-size: 0.80vw;
+            @include content-text($text-dark);
         }
     }
 }
 
 .why_flayence {
-    padding: 2vw;
+    padding: 4vw;
     h1{
         @include section-heading;
         text-align: center;
