@@ -2,7 +2,7 @@
 .col-container{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    
     .wf_content{
         margin: 0.20vw 1.5vw;
         .wfhead{
@@ -17,6 +17,7 @@
             margin-top: 0.5vw;
             font-weight: 300;
             color: $text-dark;
+            font-size: 0.80vw;
         }
     }
 }
