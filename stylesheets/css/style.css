@@ -130,7 +130,7 @@
   margin-top: 0.5vw;
   font-weight: 300;
   color: #011E56;
-  font-size: 0.80vw;
+  font-size: 0.8vw;
 }
 
 .why_flayence {
@@ -149,8 +149,9 @@
 
 .packages {
   height: 28vw;
-  width: 22vw;
-  padding: 1vw;
+  width: 18vw;
+  padding: 2vw;
+  color: #011E56;
   background-color: #F3F8FC;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,6 +166,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0px 20px 40px rgba(65, 86, 128, 0.2);
+          box-shadow: 0px 20px 40px rgba(65, 86, 128, 0.2);
 }
 
 .packages .pkg-heading {
@@ -179,22 +182,53 @@
 .packages .pkg-contents-container {
   font-weight: 300;
   color: #011E56;
-  font-size: 0.80vw;
+  font-size: 0.8vw;
+}
+
+.packages .pkg-contents-container .tick {
+  width: 1.2vw;
+}
+
+.packages .pkg-ico {
+  width: 7vw;
+  margin: 1vw;
+}
+
+.packages .price .rs {
+  font-size: 0.85vw;
+}
+
+.packages .price .amt {
+  font-size: 1.2vw;
+}
+
+.packages .max-width-btn {
+  padding: 0.75vw 1.75vw;
+  border: solid 0.2vw #011E56;
+  color: #011E56;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: #011E56;
+  margin-top: 1vw;
+  width: 100%;
 }
 
 .active-pkg {
   background-color: #515E63;
   color: #FFFFFF;
-  height: 32vw;
-  -webkit-transform: translateY(-2vw);
-          transform: translateY(-2vw);
+  height: 30vw;
+  -webkit-transform: translateY(-1vw);
+          transform: translateY(-1vw);
+  -webkit-box-shadow: 0px 20px 40px rgba(81, 94, 99, 0.3);
+          box-shadow: 0px 20px 40px rgba(81, 94, 99, 0.3);
 }
 
 .active-pkg .pkg-heading {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   color: #FFFFFF;
   letter-spacing: 0.05vw;
 }
@@ -202,7 +236,59 @@
 .active-pkg .pkg-contents-container {
   font-weight: 300;
   color: #FFFFFF;
-  font-size: 0.80vw;
+  font-size: 0.9vw;
+}
+
+.active-pkg .max-width-btn {
+  padding: 0.75vw 1.75vw;
+  border: solid 0.2vw #FFFFFF;
+  color: #FFFFFF;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: #FFFFFF;
+  margin-top: 1vw;
+  width: 100%;
+}
+
+.active-pkg .pkg-ico {
+  width: 8.4vw;
+  margin: 1vw;
+}
+
+.active-pkg .price .rs {
+  font-size: 0.9vw;
+}
+
+.active-pkg .price .amt {
+  font-size: 1.4vw;
+}
+
+.pkg-section-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #011E56;
+}
+
+.section-description {
+  line-height: 2;
+  color: #011E56;
+  margin-top: 1vw;
+  font-size: 0.8vw;
+  font-weight: 300;
+  letter-spacing: 0.05vw;
+}
+
+.pkg-know-more-btn {
+  padding: 0.75vw 1.75vw;
+  border: solid 0.2vw #011E56;
+  color: #011E56;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: #011E56;
 }
 
 * {

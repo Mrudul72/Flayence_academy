@@ -10,12 +10,12 @@
     .wf_content{
         margin: 0.20vw 1.5vw;
         .wfhead{
-            @include content-heading($text-dark);
+            @include content-heading($text-dark, 1.2vw);
 
         }
         .wftext{
             margin-top: 0.5vw;
-            @include content-text($text-dark);
+            @include content-text($text-dark, 0.80vw);
         }
     }
 }

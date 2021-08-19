@@ -1,28 +1,83 @@
-.packages{
-    height: 28vw;
-    width: 22vw;
-    padding: 1vw;
-    background-color: $secondary-light;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    .pkg-heading{
-        @include content-heading($text-dark);
+.packages {
+  height: 28vw;
+  width: 18vw;
+  padding: 2vw;
+  color: $text-dark;
+  background-color: $secondary-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 20px 40px rgba($color: #415680, $alpha: 0.2);
+  .pkg-heading {
+    @include content-heading($text-dark, 1.2vw);
+  }
+  .pkg-contents-container {
+    @include content-text($text-dark, 0.8vw);
+    .tick {
+      width: 1.2vw;
     }
-    .pkg-contents-container{
-        @include content-text($text-dark);
+  }
+  .pkg-ico {
+    width: 7vw;
+    margin: 1vw;
+  }
+  .price {
+    .rs {
+      font-size: 0.85vw;
     }
+    .amt {
+      font-size: 1.2vw;
+    }
+  }
+  .max-width-btn {
+    @include outline-button($text-dark, $text-dark);
+    margin-top: 1vw;
+    width: 100%;
+  }
 }
-.active-pkg{
-    background-color: $primary-color;
-    color: $text-light;
-    height: 32vw;
-    transform: translateY(-2vw);
-    .pkg-heading{
-        @include content-heading($text-light);
+.active-pkg {
+  background-color: $primary-color;
+  color: $text-light;
+  height: 30vw;
+  transform: translateY(-1vw);
+  box-shadow: 0px 20px 40px rgba($color: #515e63, $alpha: 0.3);
+  .pkg-heading {
+    @include content-heading($text-light, 1.5vw);
+  }
+  .pkg-contents-container {
+    @include content-text($text-light, 0.9vw);
+  }
+  .max-width-btn {
+    @include outline-button($text-light, $text-light);
+    margin-top: 1vw;
+    width: 100%;
+  }
+  .pkg-ico {
+    width: 8.4vw;
+    margin: 1vw;
+  }
+  .price {
+    .rs {
+      font-size: 0.9vw;
     }
-    .pkg-contents-container{
-        @include content-text($text-light);
+    .amt {
+      font-size: 1.4vw;
     }
+  }
+}
+
+.pkg-section-heading {
+  @include section-heading();
+}
+.section-description {
+  line-height: 2;
+  color: $text-dark;
+  margin-top: 1vw;
+  font-size: 0.8vw;
+  font-weight: 300;
+  letter-spacing: 0.05vw;
+}
+.pkg-know-more-btn{
+    @include outline-button($text-dark,$text-dark);
 }
