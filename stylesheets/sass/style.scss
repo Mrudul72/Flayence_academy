@@ -31,8 +31,10 @@ $text-light: #FFFFFF;
 }
 @mixin content-text($font-color, $font-size) {
     font-weight: 300;
+    font-family: Poppins;
     color: $font-color;
     font-size: $font-size;
+    line-height: 1.5vw;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
@@ -42,6 +44,8 @@ $text-light: #FFFFFF;
 @import "./hero-section";
 @import "./why-flayence";
 @import "./packages";
+@import "./about-us";
+
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -54,6 +58,8 @@ $text-light: #FFFFFF;
 body{
     max-width: 100%;
     overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 

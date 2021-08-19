@@ -129,8 +129,10 @@
 .col-container .wf_content .wftext {
   margin-top: 0.5vw;
   font-weight: 300;
+  font-family: Poppins;
   color: #011E56;
   font-size: 0.8vw;
+  line-height: 1.5vw;
 }
 
 .why_flayence {
@@ -181,8 +183,10 @@
 
 .packages .pkg-contents-container {
   font-weight: 300;
+  font-family: Poppins;
   color: #011E56;
   font-size: 0.8vw;
+  line-height: 1.5vw;
 }
 
 .packages .pkg-contents-container .tick {
@@ -235,8 +239,10 @@
 
 .active-pkg .pkg-contents-container {
   font-weight: 300;
+  font-family: Poppins;
   color: #FFFFFF;
   font-size: 0.9vw;
+  line-height: 1.5vw;
 }
 
 .active-pkg .max-width-btn {
@@ -291,6 +297,61 @@
   font-size: #011E56;
 }
 
+.about_us {
+  background-color: #e6edfa;
+  width: 100vw;
+}
+
+.about_us .ab_img {
+  height: 100%;
+  width: 100%;
+}
+
+.about_us .right-section {
+  padding: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about_us h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #011E56;
+  margin-bottom: 1vw;
+}
+
+.about_us .txtab {
+  font-weight: 300;
+  font-family: Poppins;
+  color: #011E56;
+  font-size: 0.8vw;
+  line-height: 1.5vw;
+}
+
+.about_us .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 6vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about_us .social-icons img {
+  width: 2.5vw;
+}
+
 * {
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
@@ -304,5 +365,7 @@
 body {
   max-width: 100%;
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
