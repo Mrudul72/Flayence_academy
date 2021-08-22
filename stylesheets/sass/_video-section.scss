@@ -8,7 +8,7 @@
         .active-video{
             height: 100%;
             width: 100%;
-            margin-bottom: 2vw;
+            box-shadow: 1.5vw 1.5vw rgba($color: $secondary-color, $alpha: 0.8);
         }
     }
     
@@ -32,6 +32,7 @@
         .video-thumbnail{
             height: 15vw;
             width: 18vw;
+            box-shadow: 0px 20px 40px rgba($color: #415680, $alpha: 0.2);
             
         }
     }

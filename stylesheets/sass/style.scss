@@ -42,7 +42,7 @@ $text-light: #FFFFFF;
 
 /*Fonts imports*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 /*SCSS imports*/
@@ -54,6 +54,7 @@ $text-light: #FFFFFF;
 @import "./about-us";
 @import "./testimonials";
 @import "./video-section";
+@import "./footer";
 
 
 *{
