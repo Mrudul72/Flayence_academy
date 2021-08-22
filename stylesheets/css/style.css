@@ -652,6 +652,10 @@
   width: 1.75vw;
 }
 
+.footer .footer-block1 .footer-content {
+  width: 13vw;
+}
+
 .footer .footer-quick .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,7 +715,7 @@
 }
 
 .footer .footer-content {
-  font-size: 0.5vw;
+  font-size: 0.6vw;
   width: 10vw;
   color: #FFFFFF;
   font-weight: 200;
