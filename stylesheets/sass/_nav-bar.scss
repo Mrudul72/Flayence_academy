@@ -12,7 +12,7 @@
         width: 45vw;
         display: flex;
         justify-content: space-between;
-        font-size: 0.8vw;
+        font-size: 0.9vw;
         font-weight: 500;
         align-items: center;
         z-index: 2;
@@ -22,6 +22,6 @@
         
     }
     .nav-btn{
-        @include outline-button($primary-color, 0.8vw);
+        @include outline-button($primary-color, 0.9vw);
     }
 }
