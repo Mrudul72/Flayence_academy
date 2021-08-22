@@ -64,10 +64,22 @@ $text-light: #FFFFFF;
     padding: 0;
 }
 body{
-    max-width: 100%;
+    width: 100vw;
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: $secondary-color;
+        border-radius: 100px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $text-dark;
+        border-radius: 100px;
+    }
+    
 }
 
 .section-heading {
@@ -77,5 +89,3 @@ body{
     font-weight: 700;
     color: $text-dark;
 }
-
-

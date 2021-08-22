@@ -1,1 +1,3 @@
-
+function imgclick(){
+    alert("click");
+}
