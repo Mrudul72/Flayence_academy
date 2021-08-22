@@ -1,5 +1,9 @@
+/*Variables*/
+/*mixins*/
+/*Fonts imports*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+/*SCSS imports*/
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,7 +123,6 @@
 
 .col-container .wf_content .wfhead {
   font-family: 'Open Sans', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 1.2vw;
   color: #011E56;
@@ -174,7 +177,6 @@
 
 .packages .pkg-heading {
   font-family: 'Open Sans', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 1.2vw;
   color: #011E56;
@@ -230,7 +232,6 @@
 
 .active-pkg .pkg-heading {
   font-family: 'Open Sans', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 1.5vw;
   color: #FFFFFF;
@@ -352,6 +353,206 @@
   width: 2.5vw;
 }
 
+.testimonial-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  padding: 2vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.testimonial-section .testimonial-content-container {
+  margin-top: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonial-section .left-section {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 2vw;
+}
+
+.testimonial-section .left-section .small-circular-avatar {
+  margin-left: 8vw;
+  margin-top: 3vw;
+}
+
+.testimonial-section .left-section .large-circular-avatar {
+  margin-bottom: 3vw;
+  margin-left: 2vw;
+}
+
+.testimonial-section .active-section {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1vw;
+}
+
+.testimonial-section .active-section .comment {
+  width: 80%;
+  line-height: 2;
+  color: #011E56;
+  margin-top: 1vw;
+  font-size: 0.8vw;
+  font-weight: 300;
+  letter-spacing: 0.05vw;
+  text-align: center;
+}
+
+.testimonial-section .active-section h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.2vw;
+  color: #011E56;
+  letter-spacing: 0.05vw;
+  font-weight: bold;
+}
+
+.testimonial-section .active-section h6 {
+  font-weight: 300;
+  font-family: Poppins;
+  color: #011E56;
+  font-size: 0.8vw;
+  line-height: 1.5vw;
+  font-weight: 400;
+}
+
+.testimonial-section .right-section {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1vw;
+  padding-bottom: 2vw;
+}
+
+.testimonial-section .right-section .small-circular-avatar {
+  margin-right: 5vw;
+  margin-bottom: 3vw;
+}
+
+.testimonial-section .right-section .medium-circular-avatar {
+  margin-top: 5vw;
+}
+
+.active-circular-avatar {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 20px 40px rgba(81, 94, 99, 0.3);
+          box-shadow: 0px 20px 40px rgba(81, 94, 99, 0.3);
+  margin-bottom: 2vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.small-circular-avatar {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 20px 40px rgba(81, 94, 99, 0.3);
+          box-shadow: 0px 20px 40px rgba(81, 94, 99, 0.3);
+  -webkit-animation: MoveUpDown 4s linear infinite;
+          animation: MoveUpDown 4s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  cursor: pointer;
+}
+
+.medium-circular-avatar {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 20px 40px rgba(81, 94, 99, 0.3);
+          box-shadow: 0px 20px 40px rgba(81, 94, 99, 0.3);
+  -webkit-animation: MoveUpDown 4s linear infinite;
+          animation: MoveUpDown 4s linear infinite;
+  cursor: pointer;
+}
+
+.large-circular-avatar {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 20px 40px rgba(81, 94, 99, 0.3);
+          box-shadow: 0px 20px 40px rgba(81, 94, 99, 0.3);
+  -webkit-animation: MoveUpDown 4s linear infinite;
+          animation: MoveUpDown 4s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  cursor: pointer;
+}
+
+@-webkit-keyframes MoveUpDown {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+}
+
 * {
   font-family: 'Poppins', sans-serif;
   -webkit-box-sizing: border-box;
@@ -367,5 +568,13 @@ body {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
+}
+
+.section-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #011E56;
 }
 /*# sourceMappingURL=style.css.map */
