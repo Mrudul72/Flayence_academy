@@ -1,49 +1,49 @@
 /*Variables*/
 
-$primary-color : #515E63;
-$secondary-color: #E6EDFA;
-$secondary-light: #F3F8FC;
-$text-dark: #011E56;
-$text-light: #FFFFFF;
+$primary-color: #515e63;
+$secondary-color: #e6edfa;
+$secondary-light: #f3f8fc;
+$text-dark: #011e56;
+$text-light: #ffffff;
 
 /*mixins*/
 
 @mixin outline-button($btn-color, $font-size) {
-    padding: 0.75vw 1.75vw;
-    border: solid 0.20vw $btn-color;
-    color: $btn-color;
-    font-weight: 500;
-    background-color: transparent;
-    border-radius: 3px;
-    font-size: $font-size;
+  padding: 0.75vw 1.75vw;
+  border: solid 0.2vw $btn-color;
+  color: $btn-color;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: $font-size;
 }
 
 @mixin section-heading {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2vw;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: $text-dark;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $text-dark;
 }
 @mixin content-heading($font-color, $font-size) {
-    font-family: 'Open Sans', sans-serif;
-     font-weight: 600;
-    font-size: $font-size;
-    color:$font-color;
-    letter-spacing: 0.05vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: $font-size;
+  color: $font-color;
+  letter-spacing: 0.05vw;
 }
 @mixin content-text($font-color, $font-size) {
-    font-weight: 300;
-    font-family: Poppins;
-    color: $font-color;
-    font-size: $font-size;
-    line-height: 1.5vw;
+  font-weight: 300;
+  font-family: Poppins;
+  color: $font-color;
+  font-size: $font-size;
+  line-height: 1.5vw;
 }
 
 /*Fonts imports*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 /*SCSS imports*/
 
@@ -55,39 +55,48 @@ $text-light: #FFFFFF;
 @import "./testimonials";
 @import "./video-section";
 @import "./footer";
+@import "./registration-section";
 
-
-*{
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-body{
-    width: 100vw;
-    overflow-x: hidden;
-    padding: 0;
-    margin: 0;
-    &::-webkit-scrollbar {
-        width: 12px;
-    }
-    &::-webkit-scrollbar-track {
-        background-color: $secondary-color;
-        border-radius: 100px;
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: $text-dark;
-        border-radius: 100px;
-    }
-    
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $secondary-color;
+    border-radius: 100px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $text-dark;
+    border-radius: 100px;
+  }
 }
 
 .section-heading {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2vw;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: $text-dark;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $text-dark;
+}
+
+.max-width-btn {
+  @include outline-button($text-dark, $text-dark);
+  margin-top: 1vw;
+  width: 100%;
+}
+
+.y.mandatory-scroll-snapping {
+  scroll-snap-type: y mandatory;
 }

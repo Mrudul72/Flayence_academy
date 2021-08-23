@@ -30,11 +30,7 @@
       font-size: 1.2vw;
     }
   }
-  .max-width-btn {
-    @include outline-button($text-dark, $text-dark);
-    margin-top: 1vw;
-    width: 100%;
-  }
+  
 }
 .active-pkg {
   background-color: $primary-color;
