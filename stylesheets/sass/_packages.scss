@@ -27,6 +27,11 @@
           width: 1.2vw;
         }
       }
+      .max-width-btn {
+        @include outline-button($text-dark, 0.8vw, $text-light);
+        margin-top: 1vw;
+        width: 100%;
+      }
       .pkg-ico {
         width: 7vw;
         margin: 1vw;
@@ -54,7 +59,7 @@
         @include content-text($text-light, 0.9vw);
       }
       .max-width-btn {
-        @include outline-button($text-light, $text-light);
+        @include outline-button($text-light, 0.9vw, $primary-color);
         margin-top: 1vw;
         width: 100%;
       }
@@ -84,7 +89,7 @@
       letter-spacing: 0.05vw;
     }
     .pkg-know-more-btn{
-        @include outline-button($text-dark,$text-dark);
+        @include outline-button($text-dark, 0.8vw, $text-light);
     }
 
   }

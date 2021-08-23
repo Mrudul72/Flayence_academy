@@ -35,7 +35,7 @@
             letter-spacing: 0.05vw;
         }
         .hero-btn{
-            @include outline-button($text-light, 0.80vw);
+            @include outline-button($text-light, 0.80vw,$primary-color);
             margin-top: 1vw;
         }
     }

@@ -22,6 +22,6 @@
         
     }
     .nav-btn{
-        @include outline-button($primary-color, 0.9vw);
+        @include outline-button($primary-color, 0.9vw, $text-light);
     }
 }

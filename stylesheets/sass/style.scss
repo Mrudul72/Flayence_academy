@@ -8,7 +8,7 @@ $text-light: #ffffff;
 
 /*mixins*/
 
-@mixin outline-button($btn-color, $font-size) {
+@mixin outline-button($btn-color, $font-size, $font-color) {
   padding: 0.75vw 1.75vw;
   border: solid 0.2vw $btn-color;
   color: $btn-color;
@@ -16,6 +16,11 @@ $text-light: #ffffff;
   background-color: transparent;
   border-radius: 3px;
   font-size: $font-size;
+  transition: 0.3s;
+  &:hover{
+    background-color: $btn-color;
+    color: $font-color;
+  }
 }
 
 @mixin section-heading {
@@ -65,6 +70,11 @@ $text-light: #ffffff;
   margin: 0;
   padding: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -89,11 +99,5 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: $text-dark;
-}
-
-.max-width-btn {
-  @include outline-button($text-dark, $text-dark);
-  margin-top: 1vw;
-  width: 100%;
 }
 

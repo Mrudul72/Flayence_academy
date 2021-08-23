@@ -46,6 +46,13 @@
   background-color: transparent;
   border-radius: 3px;
   font-size: 0.9vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-bar .nav-btn:hover {
+  background-color: #515e63;
+  color: #ffffff;
 }
 
 .hero {
@@ -101,7 +108,14 @@
   background-color: transparent;
   border-radius: 3px;
   font-size: 0.8vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   margin-top: 1vw;
+}
+
+.hero .hero-content .hero-btn:hover {
+  background-color: #ffffff;
+  color: #515e63;
 }
 
 .col-container {
@@ -205,6 +219,25 @@
   width: 1.2vw;
 }
 
+.package-section .pkg-sec-container .packages .max-width-btn {
+  padding: 0.75vw 1.75vw;
+  border: solid 0.2vw #011e56;
+  color: #011e56;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: 0.8vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 1vw;
+  width: 100%;
+}
+
+.package-section .pkg-sec-container .packages .max-width-btn:hover {
+  background-color: #011e56;
+  color: #ffffff;
+}
+
 .package-section .pkg-sec-container .packages .pkg-ico {
   width: 7vw;
   margin: 1vw;
@@ -251,9 +284,16 @@
   font-weight: 500;
   background-color: transparent;
   border-radius: 3px;
-  font-size: #ffffff;
+  font-size: 0.9vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   margin-top: 1vw;
   width: 100%;
+}
+
+.package-section .pkg-sec-container .active-pkg .max-width-btn:hover {
+  background-color: #ffffff;
+  color: #515e63;
 }
 
 .package-section .pkg-sec-container .active-pkg .pkg-ico {
@@ -293,7 +333,14 @@
   font-weight: 500;
   background-color: transparent;
   border-radius: 3px;
-  font-size: #011e56;
+  font-size: 0.8vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.package-section .pkg-sec-container .pkg-know-more-btn:hover {
+  background-color: #011e56;
+  color: #ffffff;
 }
 
 .about_us {
@@ -764,6 +811,25 @@
   border-radius: 5px;
 }
 
+.reg-section .reg-form-container .max-width-btn {
+  padding: 0.75vw 1.75vw;
+  border: solid 0.2vw #011e56;
+  color: #011e56;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: 0.8vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 1vw;
+  width: 100%;
+}
+
+.reg-section .reg-form-container .max-width-btn:hover {
+  background-color: #011e56;
+  color: #ffffff;
+}
+
 .reg-section .reg-form-container .test-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -849,6 +915,10 @@ select:invalid {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -876,17 +946,5 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   font-weight: 700;
   color: #011e56;
-}
-
-.max-width-btn {
-  padding: 0.75vw 1.75vw;
-  border: solid 0.2vw #011e56;
-  color: #011e56;
-  font-weight: 500;
-  background-color: transparent;
-  border-radius: 3px;
-  font-size: #011e56;
-  margin-top: 1vw;
-  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
