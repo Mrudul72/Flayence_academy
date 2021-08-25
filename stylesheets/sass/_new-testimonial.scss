@@ -210,13 +210,7 @@
     padding: 2vh 0;
   }
   h1 {
-    padding: 2vh 0 3vh 0;
-    color: #434c57;
-    line-height: 1.3;
-    font-size: 40px;
-    font-family: amaticSC;
-    letter-spacing: 2px;
-    padding-bottom: 30px;
+    @include content-heading($text-dark, 1.5vw);
   }
   p {
     padding: 2vh 0;
