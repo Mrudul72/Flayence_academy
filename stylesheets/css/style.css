@@ -1078,6 +1078,11 @@
   border-radius: 3px;
   border: none;
   padding: 0.7vw;
+  font-weight: 300;
+  font-family: Poppins;
+  color: #011e56;
+  font-size: 0.9vw;
+  line-height: 1.5vw;
   color: #011e56;
 }
 

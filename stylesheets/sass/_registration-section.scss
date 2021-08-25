@@ -57,6 +57,7 @@
             border-radius: 3px;
             border: none;
             padding: 0.7vw;
+            @include content-text($text-dark, 0.9vw);
             color: $text-dark;
         }
       }
