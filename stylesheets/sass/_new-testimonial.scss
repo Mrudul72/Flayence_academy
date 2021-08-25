@@ -1,40 +1,43 @@
-﻿h1 {
-  padding: 2vh 0 3vh 0;
-  color: #434c57;
-  line-height: 1.3;
-  font-size: 40px;
-  font-family: amaticSC;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
+﻿@keyframes floating {
+  0% {
+    transform: rotate(0deg) translate(-10px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
 }
+
 .section-eight {
-  padding: 40px 0 0px 0;
-  margin-top: 130px;
+  img {
+    object-fit: cover;
+  }
+  .testimonial-container {
+    padding: 0 15vw;
+    .section-heading {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2vw;
+    }
+  }
+  padding: 4vw 0;
   position: relative;
+  margin-bottom: 4vw;
+  margin-top: 4vw;
   .container-pe-quote {
     position: absolute;
     height: 100%;
     top: 0px;
     z-index: 1;
-    position: relative;
-    height: 500px;
-    top: 0px;
-    z-index: 1;
-    max-width: 300px;
-    margin: -70px auto 0;
-    &.left {
-      left: 0px;
-    }
-    &.right {
-      right: 0px;
-    }
     .pp-quote {
       cursor: pointer;
       position: absolute;
       border-radius: 100%;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
       animation-name: floating;
+      -webkit-animation-name: floating;
       animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
       animation-timing-function: linear;
       transform-origin: 50% 1px;
       opacity: 0;
@@ -53,10 +56,10 @@
       }
     }
     .li-quote-1 {
-      height: 104px;
-      width: 104px;
-      left: 15px;
-      top: 95px;
+      height: 8vw;
+      width: 8vw;
+      left: 2vw;
+      top: 3vw;
       animation-duration: 10s;
       transition-delay: 0.6s;
       opacity: 1;
@@ -69,24 +72,21 @@
       animation-duration: 12s;
       transition-delay: 0s;
       opacity: 1;
-      left: 60px;
-      top: 270px;
     }
     .li-quote-3 {
-      height: 64px;
-      width: 64px;
-      left: 68px;
-      top: 380px;
+      height: 5vw;
+      width: 5vw;
+      left: 5vw;
+      top: 20vw;
       animation-duration: 6s;
       transition-delay: 0.2s;
       opacity: 1;
-      left: 0;
     }
     .li-quote-4 {
-      height: 73px;
-      width: 73px;
-      right: -15px;
-      top: 110px;
+      height: 4vw;
+      width: 4vw;
+      right: -1vw;
+      top: 3vw;
       animation-duration: 5s;
       transition-delay: 0.7s;
       opacity: 1;
@@ -108,14 +108,12 @@
       animation-duration: 7s;
       transition-delay: 0.2s;
       opacity: 1;
-      right: 100px;
-      top: 179px;
     }
     .li-quote-7 {
-      height: 48px;
-      width: 48px;
-      right: 40px;
-      top: 414px;
+      height: 7vw;
+      width: 7vw;
+      right: 4vw;
+      top: 18vw;
       animation-duration: 7s;
       transition-delay: 0.3s;
       opacity: 1;
@@ -128,16 +126,20 @@
       animation-duration: 5s;
       transition-delay: 0s;
       opacity: 1;
-      height: 43px;
-      width: 43px;
-      left: 0px;
-      top: 220px;
     }
   }
+  .container-pe-quote.left {
+    left: 0px;
+  }
+  .container-pe-quote.right {
+    right: 0px;
+  }
   .container-quote {
-    height: 205px;
-    overflow: hidden;
-    overflow-y: auto;
+    position: relative;
+    width: 100%;
+    margin-top: 7vw;
+    //height: 135px;
+    perspective: 10000px;
     .quote {
       max-width: 520px;
       width: 100%;
@@ -149,25 +151,25 @@
       text-align: center;
       transform: translateX(-50%);
       transition: all 1s cubic-bezier(0.5, -0.01, 0, 1.005);
-      &.hide-bottom {
-        opacity: 0;
-        transform: translateX(-50%) translateY(100%) rotateX(-70deg);
-      }
-      &.hide-top {
-        opacity: 0;
-        transform: translateX(-50%) translateY(-100%) rotateX(70deg);
-      }
-      &.show {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0%) rotateX(0deg);
-      }
+    }
+    .quote.hide-bottom {
+      opacity: 0;
+      transform: translateX(-50%) translateY(100%) rotateX(-70deg);
+    }
+    .quote.hide-top {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-100%) rotateX(70deg);
+    }
+    .quote.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0%) rotateX(0deg);
     }
   }
   .container-dp-name {
     position: relative;
     width: 100%;
     margin-top: 10px;
-    height: 225px;
+    height: 12vw;
     perspective: 10000px;
     text-align: center;
     .box-dpname {
@@ -179,24 +181,19 @@
       cursor: pointer;
       text-align: center;
       transition: all 1s cubic-bezier(0.5, -0.01, 0, 1.005);
-      &.hide-dp-bottom {
-        opacity: 0;
-        transform: translateX(0%) translateY(100%) rotateX(-70deg);
-      }
-      &.hide-dp-top {
-        opacity: 0;
-        transform: translateX(0%) translateY(-100%) rotateX(70deg);
-      }
-      &.look {
-        opacity: 1;
-        transform: translateX(0%) translateY(0%) rotateX(0deg);
-      }
     }
-  }
-  .bottom-ani-cs {
-    position: absolute;
-    top: 150px;
-    right: 16px;
+    .box-dpname.hide-dp-bottom {
+      opacity: 0;
+      transform: translateX(0%) translateY(100%) rotateX(-70deg);
+    }
+    .box-dpname.hide-dp-top {
+      opacity: 0;
+      transform: translateX(0%) translateY(-100%) rotateX(70deg);
+    }
+    .box-dpname.look {
+      opacity: 1;
+      transform: translateX(0%) translateY(0%) rotateX(0deg);
+    }
   }
 }
 .op-eight-section {
@@ -204,20 +201,23 @@
 }
 .sec-eight-text-area {
   text-align: center;
-  padding: 100px 0 240px;
-  padding: 10px 0 100px 0;
   img {
-    padding: 2vh 0;
+    //center image
+    object-fit: contain;
+    height: 13vw;
+    width: 13vw;
+    border-radius: 50%;
+    margin-bottom: 1vw;
   }
   h1 {
     @include content-heading($text-dark, 1.5vw);
   }
+  h3 {
+    @include content-heading($text-dark, 0.9vw);
+    margin-bottom: 1vw;
+  }
   p {
-    padding: 2vh 0;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #434c57;
-    font-family: mavenpro;
+    @include content-text($text-dark, 0.8vw);
   }
 }
 .container-pe-quote {
@@ -230,38 +230,68 @@
       position: relative;
       z-index: 1;
     }
+    &:hover {
+      &:after {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+  .pp-quote.active {
+    &:after {
+      transform: translate(-50%, -50%) scale(1);
+    }
   }
 }
-.container-pe-quote .pp-quote:hover:after,
-.container-pe-quote .pp-quote.active:after {
-  transform: translate(-50%, -50%) scale(1);
-}
-@keyframes floating {
-  0% {
-    -webkit-transform: rotate(0deg) translate(-10px) rotate(0deg);
-    -moz-transform: rotate(0deg) translate(-10px) rotate(0deg);
-    -ms-transform: rotate(0deg) translate(-10px) rotate(0deg);
-    -o-transform: rotate(0deg) translate(-10px) rotate(0deg);
-    transform: rotate(0deg) translate(-10px) rotate(0deg);
+@media screen and (max-width: 767px) {
+  .sec-eight-text-area {
+    padding: 10px 0 10px 0;
   }
-  100% {
-    -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
-    -moz-transform: rotate(360deg) translate(-10px) rotate(-360deg);
-    -ms-transform: rotate(360deg) translate(-10px) rotate(-360deg);
-    -o-transform: rotate(360deg) translate(-10px) rotate(-360deg);
-    transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  .section-eight {
+    .container-pe-quote {
+      position: relative;
+      height: 500px;
+      top: 0px;
+      z-index: 1;
+      max-width: 300px;
+      margin: -70px auto 0;
+    }
   }
 }
 
-.section-eight {
-  .container-quote {
+@media screen and (max-width: 480px) {
+  .section-eight {
     position: relative;
-    width: 100%;
-    margin-top: 10px;
-    height: 135px;
-    perspective: 10000px;
+    .bottom-ani-cs {
+      position: absolute;
+      top: 150px;
+      right: 16px;
+    }
+    .container-pe-quote {
+      .li-quote-2 {
+        left: 60px;
+        top: 270px;
+      }
+      .li-quote-6 {
+        right: 100px;
+        top: 179px;
+      }
+      .li-quote-8 {
+        height: 43px;
+        width: 43px;
+        left: 0px;
+        top: 220px;
+      }
+      .li-quote-3 {
+        left: 0;
+      }
+    }
+    .container-quote {
+      height: 205px;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+  }
+  .sec-eight-text-area {
+    padding: 10px 0 100px 0;
   }
 }
-
-
-
