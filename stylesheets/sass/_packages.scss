@@ -24,9 +24,10 @@
       .pkg-contents-container {
         width: 100%;
         display: flex;
-        padding: 0 1vw;
+        align-items: center;
         flex-direction: column;
         .pkg-content{
+          width: 80%;
           display: flex;
           justify-content: start;
           margin: 0.5vw 0;
@@ -50,10 +51,15 @@
         margin: 1vw;
       }
       .price {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
         .rs {
           font-size: 0.85vw;
         }
         .amt {
+          margin-left: 1vw;
           font-size: 1.2vw;
         }
       }
@@ -71,8 +77,10 @@
       .pkg-contents-container {
         width: 100%;
         display: flex;
+        align-items: center;
         flex-direction: column;
         .pkg-content{
+          width: 80%;
           display: flex;
           justify-content: start;
           div{
