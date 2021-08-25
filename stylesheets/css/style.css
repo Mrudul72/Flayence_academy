@@ -208,15 +208,38 @@
 }
 
 .package-section .pkg-sec-container .packages .pkg-contents-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.package-section .pkg-sec-container .packages .pkg-contents-container .pkg-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 0.5vw 0;
+}
+
+.package-section .pkg-sec-container .packages .pkg-contents-container .pkg-content .tick {
+  width: 1.1vw;
+}
+
+.package-section .pkg-sec-container .packages .pkg-contents-container .pkg-content div {
+  padding-left: 1vw;
   font-weight: 300;
   font-family: Poppins;
   color: #011e56;
   font-size: 0.8vw;
   line-height: 1.5vw;
-}
-
-.package-section .pkg-sec-container .packages .pkg-contents-container .tick {
-  width: 1.2vw;
 }
 
 .package-section .pkg-sec-container .packages .max-width-btn {
@@ -270,6 +293,27 @@
 }
 
 .package-section .pkg-sec-container .active-pkg .pkg-contents-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.package-section .pkg-sec-container .active-pkg .pkg-contents-container .pkg-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.package-section .pkg-sec-container .active-pkg .pkg-contents-container .pkg-content div {
+  padding-left: 1vw;
   font-weight: 300;
   font-family: Poppins;
   color: #ffffff;
@@ -297,7 +341,7 @@
 }
 
 .package-section .pkg-sec-container .active-pkg .pkg-ico {
-  width: 8.4vw;
+  width: 8vw;
   margin: 1vw;
 }
 
