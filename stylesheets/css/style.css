@@ -83,7 +83,12 @@
 }
 
 .hero .hero-content .hero-img {
+  width: 35vw;
   height: 30vw;
+  border: 0.5vw solid #ffffff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 20px 40px rgba(65, 86, 128, 0.2);
+          box-shadow: 0px 20px 40px rgba(65, 86, 128, 0.2);
 }
 
 .hero .hero-content .logo-large {

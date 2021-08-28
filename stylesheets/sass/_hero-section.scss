@@ -19,8 +19,11 @@
         position: absolute;
         top: 20%;
         .hero-img{
-            //width: 35vw;
+            width: 35vw;
             height: 30vw;
+            border: 0.5vw solid $text-light;
+            border-radius: 3px;
+            box-shadow: 0px 20px 40px rgba($color: #415680, $alpha: 0.2);
         }
         .logo-large{
             width: 60%;
