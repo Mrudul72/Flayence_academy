@@ -1,45 +1,103 @@
-.hero{
+.hero {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-image: url("../../assets/images/flayence.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
+  background-size: contain;
+  .hero-background {
+    height: 100%;
+    width: 70vw;
+    background-color: $primary-color;
+    z-index: 0;
+  }
+  .hero-content {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    justify-content: center;
+    .hero-content-container {
+      padding-top: 2vw;
+      width: 40vw;
+      .logo-large {
+        width: 60%;
+      }
+      .content-text {
+        width: 75%;
+        line-height: 2;
+        color: $text-light;
+        margin-top: 1vw;
+        font-size: 0.8vw;
+        font-weight: 300;
+        letter-spacing: 0.05vw;
+      }
+      .hero-btn {
+        @include outline-button($text-light, 0.8vw, $primary-color);
+        margin-top: 1vw;
+      }
+    }
+    .hero-img-container {
+      width: 35vw;
+      .hero-img {
+        width: 100%;
+        height: 30vw;
+        border: 0.5vw solid $text-light;
+        border-radius: 3px;
+        box-shadow: 0px 20px 40px rgba($color: #415680, $alpha: 0.2);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero {
     height: 100vh;
     max-width: 100%;
     overflow-x: hidden;
-    background-image: url("../../assets/images/flayence.svg");
+    background-image: url("../../assets/images/header-img.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right top;
-    background-size: contain;
-    .hero-background{
-        height: 100%;
-        width: 70vw;
-        background-color: $primary-color;
-        z-index: 0;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+    .hero-background {
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(3px);
     }
-    .hero-content{
-        display: flex;
+    .hero-content {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      .hero-content-container {
+        padding: 0 8vw;
+        margin-top: 15vw;
         width: 100%;
-        position: absolute;
-        top: 20%;
-        .hero-img{
-            width: 35vw;
-            height: 30vw;
-            border: 0.5vw solid $text-light;
-            border-radius: 3px;
-            box-shadow: 0px 20px 40px rgba($color: #415680, $alpha: 0.2);
+        .logo-large {
+          width: 55%;
         }
-        .logo-large{
-            width: 60%;
+        .content-text {
+          width: 60%;
+          line-height: 2;
+          color: $text-light;
+          margin-top: 2vw;
+          font-size: 2vw;
+          font-weight: 300;
+          letter-spacing: 0.05vw;
         }
-        .content-text{
-            width: 75%;
-            line-height: 2;
-            color: $text-light;
-            margin-top: 1vw;
-            font-size: 0.80vw;
-            font-weight: 300;
-            letter-spacing: 0.05vw;
+        .hero-btn {
+          @include outline-button-mob($text-light, 2vw, $primary-color);
+          margin-top: 2vw;
         }
-        .hero-btn{
-            @include outline-button($text-light, 0.80vw,$primary-color);
-            margin-top: 1vw;
-        }
+      }
+      .hero-img-container {
+        display: none;
+      }
     }
+  }
 }

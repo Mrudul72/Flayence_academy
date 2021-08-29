@@ -29,3 +29,35 @@
     
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .about_us{
+    background-image: url("/Flayence_academy/assets/images/bg.png");
+    .ab_img{
+      display: none;
+    }
+    h1 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 2vw;
+      text-transform: uppercase;
+      font-weight: 700;
+      color:#FFFFFF;
+      margin-bottom: 1vw;
+    }
+    .txtab {
+      font-weight: 300;
+      font-family: Poppins;
+      color: #FFFFFF;
+      font-size: 0.8vw;
+      line-height: 1.5vw;
+    }
+    .social-icons {
+      display: flex;
+      width: 6vw;
+      justify-content: space-between;
+      img {
+        width: 2.5vw;
+      }
+    }
+  }
+}

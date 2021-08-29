@@ -22,6 +22,20 @@ $text-light: #ffffff;
     color: $font-color;
   }
 }
+@mixin outline-button-mob($btn-color, $font-size, $font-color) {
+  padding: 2vw 3vw;
+  border: solid 0.3vw $btn-color;
+  color: $btn-color;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 2px;
+  font-size: $font-size;
+  transition: 0.3s;
+  &:hover{
+    background-color: $btn-color;
+    color: $font-color;
+  }
+}
 
 @mixin section-heading {
   font-family: "Open Sans", sans-serif;
@@ -77,7 +91,7 @@ html {
 
 body {
   width: 100vw;
-  overflow-x: hidden;
+  
   padding: 0;
   margin: 0;
   &::-webkit-scrollbar {
@@ -91,6 +105,12 @@ body {
     background-color: $text-dark;
     border-radius: 100px;
   }
+}
+
+.main{
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .section-heading {
