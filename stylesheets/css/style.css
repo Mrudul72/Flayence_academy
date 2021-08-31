@@ -1414,12 +1414,12 @@
   .footer .footer_box .footer-block1 .footer-content {
     font-size: 3vw;
     width: 50vw;
-    line-height: 18px;
+    line-height: 2;
   }
   .footer .footer_box .footer-about .footer-content {
     width: 60vw;
     font-size: 3vw;
-    line-height: 18px;
+    line-height: 2;
   }
   .footer .footer_box .footer-quick .links {
     display: -webkit-box;
@@ -1445,7 +1445,7 @@
   .footer .footer_box .footer-contact .contact .contact-details {
     width: 40vw;
     font-size: 3vw;
-    line-height: 15px;
+    line-height: 2;
   }
   .footer .footer_box .footer-contact .contact .contact-items {
     display: -webkit-box;
@@ -1476,7 +1476,7 @@
     width: 40vw;
     font-weight: 200;
     font-size: 3vw;
-    line-height: 15px;
+    line-height: 2;
   }
 }
 
