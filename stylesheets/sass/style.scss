@@ -116,6 +116,98 @@ body {
   color: $text-dark;
 }
 
+
+@-webkit-keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 52, 155);
+  }
+}
+
+@keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(0, 52, 155);
+  }
+}
+
+.svg-elem-1 {
+          animation: animate-svg-fill-1;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animate-svg-fill-2 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(255, 204, 1);
+  }
+}
+
+@keyframes animate-svg-fill-2 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(255, 204, 1);
+  }
+}
+
+.svg-elem-2 {
+          animation: animate-svg-fill-2;
+          animation-delay: 1.3s;
+            animation-duration: 4s;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animate-svg-fill-3 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(255, 204, 1);
+  }
+}
+
+@keyframes animate-svg-fill-3 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(255, 204, 1);
+  }
+}
+
+.svg-elem-3 {
+          animation: animate-svg-fill-3;
+          animation-delay: 2.6s;
+            animation-duration: 4s;
+          animation-iteration-count: infinite;
+}
+
+.loading-container{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
 @media only screen and (max-width: 480px) {
   html,body{
     width: 100%;
