@@ -50,6 +50,9 @@
       }
     }
   }
+  .arrow {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -75,6 +78,8 @@
       height: 100%;
       justify-content: center;
       .hero-content-container {
+        display: flex;
+        flex-direction: column;
         padding: 0 12vw;
         margin-top: 10vw;
         width: 100%;
@@ -97,6 +102,32 @@
       }
       .hero-img-container {
         display: none;
+      }
+    }
+    .down-arrow-container {
+      margin-top: 40vw;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+
+      .arrow {
+        
+        display: block;
+        width: 10vw;
+        animation: arrow-movement 2s ease-in-out infinite;
+      }
+    }
+
+    @keyframes arrow-movement {
+      0% {
+        opacity: 0;
+      }
+      70% {
+        opacity: 1;
+        transform: translateY(10px);
+      }
+      100% {
+        opacity: 0;
       }
     }
   }
