@@ -1291,6 +1291,7 @@
   font-size: 1vw;
   color: #AB3B61;
   letter-spacing: 0.05vw;
+  text-decoration: underline;
 }
 
 .reg-section .reg-form-container .test-link img {
@@ -1395,7 +1396,6 @@ select:invalid {
     font-size: 3vw;
     color: #AB3B61;
     letter-spacing: 0.05vw;
-    text-decoration: underline;
   }
   .reg-section .reg-form-container .test-link img {
     width: 2.5vw;

@@ -31,6 +31,7 @@
         align-items: center;
         .t-link{
             @include content-heading(#AB3B61, 1vw);
+            text-decoration: underline;
         }
         img{
             width: 1vw;
@@ -97,7 +98,7 @@ select:invalid {
         
           .t-link{
               @include content-heading(#AB3B61, 3vw);
-              text-decoration: underline;
+              
           }
           img{
               width: 2.5vw;
