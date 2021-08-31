@@ -1344,11 +1344,6 @@
   color: #011e56;
 }
 
-.reg-section .reg-form-container .max-width-btn {
-  margin: 0;
-  margin-top: 1vw;
-}
-
 select:invalid {
   color: gray !important;
 }
@@ -1359,7 +1354,7 @@ select:invalid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 5vw;
+    padding: 20vw 5vw;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1372,68 +1367,35 @@ select:invalid {
     background-size: contain;
   }
   .reg-section .reg-form-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 6vw;
-    width: 60vw;
-    -webkit-box-shadow: 0px 20px 50px 10px rgba(81, 94, 99, 0.25);
-            box-shadow: 0px 20px 50px 10px rgba(81, 94, 99, 0.25);
-    background-color: white;
-    border-radius: 5px;
+    width: 80vw;
+    padding: 6vw 5vw;
   }
   .reg-section .reg-form-container .section-heading {
-    font-size: 3vw;
-    padding: 1vw;
-    margin-bottom: 0px;
+    font-size: 5vw;
   }
   .reg-section .reg-form-container .max-width-btn {
-    padding: 0.75vw 1.75vw;
-    border: solid 0.2vw #011e56;
+    padding: 2vw 3vw;
+    border: solid 0.5vw #011e56;
     color: #011e56;
     font-weight: 500;
     background-color: transparent;
-    border-radius: 3px;
-    font-size: 2vw;
+    border-radius: 2px;
+    font-size: 3vw;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    padding: 1vw 0vw;
     width: 100%;
   }
   .reg-section .reg-form-container .max-width-btn:hover {
     background-color: #011e56;
     color: #ffffff;
   }
-  .reg-section .reg-form-container .test-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .reg-section .reg-form-container .test-link .t-link {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 3vw;
     color: #AB3B61;
     letter-spacing: 0.05vw;
-    font-size: 1.7vw;
     text-decoration: underline;
-    line-height: 0em;
   }
   .reg-section .reg-form-container .test-link img {
     width: 2.5vw;
@@ -1441,49 +1403,33 @@ select:invalid {
     margin-left: 0.5vw;
   }
   .reg-section .reg-form-container .input-field-container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 2.5vw;
+    margin: 4vw 0;
   }
   .reg-section .reg-form-container .input-field-container .input-field {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0.8vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 2.3vw;
+    margin-bottom: 5vw;
   }
   .reg-section .reg-form-container .input-field-container .input-field .input-lable {
     font-weight: 300;
     font-family: Poppins;
     color: #011e56;
-    font-size: 1.5vw;
+    font-size: 2.8vw;
     line-height: 1.5vw;
     font-weight: 400;
   }
   .reg-section .reg-form-container .input-field-container .input-field .input-box {
-    background-color: #e6edfa;
-    border-radius: 3px;
-    border: none;
     font-weight: 300;
     font-family: Poppins;
     color: #011e56;
-    font-size: 1.8vw;
+    font-size: 3vw;
     line-height: 1.5vw;
-    color: #011e56;
-  }
-  .reg-section .reg-form-container .max-width-btn {
-    margin: 0;
-    margin-top: 3vw;
+    padding: 2vw 1vw;
   }
   select:invalid {
     color: gray !important;
