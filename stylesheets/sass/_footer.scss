@@ -71,3 +71,97 @@
     line-height: 1vw;
   }
 }
+@media only screen and (max-width: 480px) {
+  .footer {
+
+   padding: 15vw 0 ;
+    text-align: left;
+    background-color: #292929;
+    .footer_box{
+      margin-right:20vw;
+     text-align: left;
+    
+    .footer-block1 {
+      .logo {
+        margin-left: 0;
+        width: 40vw;
+      }
+      .social {
+        display: flex;
+        padding: 7vw;
+        justify-content: space-between;
+       
+        .social-ico {
+          width: 10vw;
+          padding: 1.5vw;
+        }
+      }
+      .footer-content{
+        font-size: 3vw;
+          width: 50vw;
+          line-height: 18px;
+      }
+    }
+  
+    .footer-about{
+        .footer-content{
+            width: 60vw;
+            font-size: 3vw;
+            line-height: 18px;
+        }
+    }
+  
+    .footer-quick{
+        .links{
+            display: flex;
+            flex-direction: column;
+            width: 40vw;
+            font-size: 3vw;
+            line-height: 18px;
+         
+            
+        }
+      
+    }
+    .footer-contact{
+        
+        .contact{
+          display: flex;
+          flex-direction: column;
+           
+            .contact-details{
+            
+              width: 40vw;
+              font-size: 3vw;
+              line-height: 15px;
+            
+             
+            }
+           
+            .contact-items{
+              display: flex;
+              width: 50vw;
+              justify-content: space-between;
+              align-items: flex-start;
+              img{
+                  width: 5vw;
+              }
+            }
+        }
+    }
+  }
+    .footer-heading {
+      @include content-heading($text-light, 4vw);
+      padding-top: 3vw;
+      margin-bottom: 4vw;
+      text-transform: uppercase;
+    }
+    .footer-content {
+     
+      width: 40vw;
+      font-weight: 200;
+      font-size: 3vw;
+      line-height: 15px;
+    }
+  }
+}
