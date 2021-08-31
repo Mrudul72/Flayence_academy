@@ -60,8 +60,8 @@
   font-size: 0.9vw;
   transition: 0.3s;
   &:hover{
-    background-color: $text-light;
-    color: $primary-color;
+    background-color: $text-light !important;
+    color: $primary-color !important;
   }
 }
 /*for scroll animation end*/

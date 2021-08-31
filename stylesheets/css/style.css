@@ -99,8 +99,8 @@
 }
 
 .nav-btn-active:hover {
-  background-color: #ffffff;
-  color: #515e63;
+  background-color: #ffffff !important;
+  color: #515e63 !important;
 }
 
 /*for scroll animation end*/
