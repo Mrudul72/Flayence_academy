@@ -1,20 +1,28 @@
 .nav-bar{
-    display:flex;
     width: 100%;
+    height: 8vw;
+    display:flex;
     justify-content: flex-end;
+    align-items: center;
     background-color: transparent;
-    padding: 2vw 11vw 0px 0px;
     position: absolute;
+    padding: 0 12vw;
     top: 0;
+    z-index: 1;
+
+    .nav-logo{
+        display: none;
+        width: 2.5vw;
+    }
     
-    ul{
+    .nav-links{
         width: 45vw;
+        height: 100%;
         display: flex;
         justify-content: space-between;
         font-size: 0.9vw;
         font-weight: 500;
         align-items: center;
-        z-index: 2;
     a{
         color: white;
     }    
@@ -23,13 +31,78 @@
     .nav-btn{
         @include outline-button($primary-color, 0.9vw, $text-light);
     }
+
+    .burger {
+        display: none;
+    
+        div {
+          width: 25px;
+          height: 3px;
+          margin: 5px;
+          border-radius: 2px;
+          background-color: $text-light;
+          transition: all ease 0.5s;
+        }
+      }
 }
 
 
-@media only screen and (max-width: 480px) {
-    .nav-bar{
-        display: none;
-        padding: 0;
+@media screen and (max-width: 480px) {
+  .nav-bar{
+    height: 15vw;
+    justify-content: space-between;
+    overflow-x: hidden;
+    .nav-logo{
+        display: block;
+        width: 5vw;
     }
+    .burger {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-links{
+        height: 100%;
+        width: 100%;
+        padding: 30% 0;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(3px);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: ease-in-out 0.5s;
+        a{
+            color: white !important;
+            font-size: 3vw;
+        }   
+        .nav-btn{
+            @include outline-button($text-light, 3vw, $text-light);
+            padding: 2vw 3vw;
+            &:hover{
+                color: $text-dark;
+            } 
+        }
+    }
+  }
     
+
+  .nav-active {
+    transform: translateX(0%) !important;
+  }
+
+  .toggle {
+    .line1 {
+      transform: rotate(-45deg) translate(-5px, 4px);
+    }
+
+    .line2 {
+      opacity: 0;
+    }
+
+    .line3 {
+      transform: rotate(45deg) translate(-7px, -6px);
+    }
+  }
 }
