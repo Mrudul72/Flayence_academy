@@ -79,19 +79,19 @@
         margin-top: 15vw;
         width: 100%;
         .logo-large {
-          width: 55%;
+          width: 60%;
         }
         .content-text {
           width: 60%;
           line-height: 2;
           color: $text-light;
           margin-top: 2vw;
-          font-size: 2vw;
+          font-size: 3vw;
           font-weight: 300;
           letter-spacing: 0.05vw;
         }
         .hero-btn {
-          @include outline-button-mob($text-light, 2vw, $primary-color);
+          @include outline-button-mob($text-light, 3vw, $primary-color);
           margin-top: 2vw;
         }
       }

@@ -292,25 +292,25 @@
     width: 100%;
   }
   .hero .hero-content .hero-content-container .logo-large {
-    width: 55%;
+    width: 60%;
   }
   .hero .hero-content .hero-content-container .content-text {
     width: 60%;
     line-height: 2;
     color: #ffffff;
     margin-top: 2vw;
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 300;
     letter-spacing: 0.05vw;
   }
   .hero .hero-content .hero-content-container .hero-btn {
     padding: 2vw 3vw;
-    border: solid 0.3vw #ffffff;
+    border: solid 0.5vw #ffffff;
     color: #ffffff;
     font-weight: 500;
     background-color: transparent;
     border-radius: 2px;
-    font-size: 2vw;
+    font-size: 3vw;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     margin-top: 2vw;

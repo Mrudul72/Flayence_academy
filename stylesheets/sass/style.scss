@@ -24,7 +24,7 @@ $text-light: #ffffff;
 }
 @mixin outline-button-mob($btn-color, $font-size, $font-color) {
   padding: 2vw 3vw;
-  border: solid 0.3vw $btn-color;
+  border: solid 0.5vw $btn-color;
   color: $btn-color;
   font-weight: 500;
   background-color: transparent;
