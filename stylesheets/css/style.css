@@ -142,7 +142,7 @@
   }
   .nav-bar .nav-links a {
     color: white !important;
-    font-size: 3vw;
+    font-size: 3.3vw;
   }
   .nav-bar .nav-links .nav-btn {
     padding: 0.75vw 1.75vw;
@@ -288,18 +288,18 @@
   }
   .hero .hero-content .hero-content-container {
     padding: 0 12vw;
-    margin-top: 15vw;
+    margin-top: 10vw;
     width: 100%;
   }
   .hero .hero-content .hero-content-container .logo-large {
-    width: 60%;
+    width: 90%;
   }
   .hero .hero-content .hero-content-container .content-text {
-    width: 60%;
+    width: 100%;
     line-height: 2;
     color: #ffffff;
-    margin-top: 2vw;
-    font-size: 3vw;
+    margin-top: 3vw;
+    font-size: 3.3vw;
     font-weight: 300;
     letter-spacing: 0.05vw;
   }
@@ -310,10 +310,10 @@
     font-weight: 500;
     background-color: transparent;
     border-radius: 2px;
-    font-size: 3vw;
+    font-size: 3.3vw;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    margin-top: 2vw;
+    margin-top: 3vw;
   }
   .hero .hero-content .hero-content-container .hero-btn:hover {
     background-color: #ffffff;
@@ -322,6 +322,10 @@
   .hero .hero-content .hero-img-container {
     display: none;
   }
+}
+
+.row-container {
+  padding: 2vw;
 }
 
 .col-container {
@@ -339,6 +343,7 @@
 
 .col-container .wf_content {
   margin: 0.20vw 1.5vw;
+  text-align: left;
 }
 
 .col-container .wf_content .wfhead {
@@ -360,6 +365,7 @@
 
 .why_flayence {
   padding: 4vw;
+  text-align: center;
 }
 
 .why_flayence h1 {
@@ -370,6 +376,70 @@
   color: #011e56;
   text-align: center;
   margin-bottom: 2vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .col-container {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .col-container .wf_content {
+    text-align: center;
+  }
+  .col-container .wf_content .wfhead {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 4.5vw;
+    color: #011e56;
+    letter-spacing: 0.05vw;
+  }
+  .col-container .wf_content .wftext {
+    width: 50vw;
+    padding: 2vw;
+    font-weight: 300;
+    font-family: Poppins;
+    color: #011e56;
+    font-size: 3.3vw;
+    line-height: 1.5vw;
+    line-height: 20px;
+  }
+  .why_flayence {
+    padding: 4vw;
+  }
+  .why_flayence h1 {
+    margin-top: 4vw;
+    font-family: "Open Sans", sans-serif;
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #011e56;
+  }
+  .why_flayence .col-container .wf_img {
+    width: 22vw;
+    padding: 3vw;
+  }
 }
 
 .package-section {
@@ -1368,11 +1438,11 @@ select:invalid {
     background-size: contain;
   }
   .reg-section .reg-form-container {
-    width: 80vw;
+    width: 85vw;
     padding: 6vw 5vw;
   }
   .reg-section .reg-form-container .section-heading {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .reg-section .reg-form-container .max-width-btn {
     padding: 2vw 3vw;
@@ -1381,10 +1451,11 @@ select:invalid {
     font-weight: 500;
     background-color: transparent;
     border-radius: 2px;
-    font-size: 3vw;
+    font-size: 3.3vw;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     width: 100%;
+    margin-top: 0 !important;
   }
   .reg-section .reg-form-container .max-width-btn:hover {
     background-color: #011e56;
@@ -1393,7 +1464,7 @@ select:invalid {
   .reg-section .reg-form-container .test-link .t-link {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 3.3vw;
     color: #AB3B61;
     letter-spacing: 0.05vw;
   }
@@ -1413,21 +1484,22 @@ select:invalid {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 5vw;
+    margin-bottom: 7vw;
   }
   .reg-section .reg-form-container .input-field-container .input-field .input-lable {
     font-weight: 300;
     font-family: Poppins;
     color: #011e56;
-    font-size: 2.8vw;
+    font-size: 3vw;
     line-height: 1.5vw;
     font-weight: 400;
+    padding-bottom: 1vw;
   }
   .reg-section .reg-form-container .input-field-container .input-field .input-box {
     font-weight: 300;
     font-family: Poppins;
     color: #011e56;
-    font-size: 3vw;
+    font-size: 3.3vw;
     line-height: 1.5vw;
     padding: 2vw 1vw;
   }

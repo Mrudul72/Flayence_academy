@@ -82,22 +82,23 @@ select:invalid {
     background-attachment: fixed;
     background-size: contain;
     .reg-form-container {
-      width: 80vw;
+      width: 85vw;
       padding: 6vw 5vw;
       
       .section-heading{
-        font-size: 5vw;
+        font-size: 6vw;
       }
       
       .max-width-btn {
-        @include outline-button-mob($text-dark, 3vw, $text-light);
+        @include outline-button-mob($text-dark, 3.3vw, $text-light);
         width: 100%;
+        margin-top: 0 !important;
       }
       
       .test-link {
         
           .t-link{
-              @include content-heading(#AB3B61, 3vw);
+              @include content-heading(#AB3B61, 3.3vw);
               
           }
           img{
@@ -112,21 +113,20 @@ select:invalid {
         .input-field {
           display: flex;
           flex-direction: column;
-          margin-bottom: 5vw;
+          margin-bottom: 7vw;
           .input-lable{
-              @include content-text($text-dark, 2.8vw);
+              @include content-text($text-dark, 3vw);
               font-weight: 400;
+              padding-bottom: 1vw;
           
           }
           .input-box{
-              @include content-text($text-dark, 3vw);
+              @include content-text($text-dark, 3.3vw);
               padding: 2vw 1vw;
           }
         }
       }
-      .max-width-btn{
-          
-      }
+
     }
   }
   select:invalid { 

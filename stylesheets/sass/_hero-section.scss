@@ -76,23 +76,23 @@
       justify-content: center;
       .hero-content-container {
         padding: 0 12vw;
-        margin-top: 15vw;
+        margin-top: 10vw;
         width: 100%;
         .logo-large {
-          width: 60%;
+          width: 90%;
         }
         .content-text {
-          width: 60%;
+          width: 100%;
           line-height: 2;
           color: $text-light;
-          margin-top: 2vw;
-          font-size: 3vw;
+          margin-top: 3vw;
+          font-size: 3.3vw;
           font-weight: 300;
           letter-spacing: 0.05vw;
         }
         .hero-btn {
-          @include outline-button-mob($text-light, 3vw, $primary-color);
-          margin-top: 2vw;
+          @include outline-button-mob($text-light, 3.3vw, $primary-color);
+          margin-top: 3vw;
         }
       }
       .hero-img-container {
