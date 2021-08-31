@@ -49,3 +49,18 @@ $(function() {
       }
   });
 });
+
+//top-arrow btn
+$(function() {
+  $(window).on("scroll", function() {
+      if($(window).scrollTop() > 500) {
+          $(".top-arrow").css("display", "block");
+         
+          
+      } else {
+          //remove the background property so it comes transparent again (defined in your css)
+          $(".top-arrow").css("display", "none");
+         
+      }
+  });
+});

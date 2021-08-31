@@ -1285,14 +1285,14 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 2vw;
-  background-color: #515e63;
+  background-color: #292929;
 }
 
-.footer .footer-block1 .logo {
+.footer .footer_box .footer-block1 .logo {
   width: 8vw;
 }
 
-.footer .footer-block1 .social {
+.footer .footer_box .footer-block1 .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1306,19 +1306,19 @@
           align-items: center;
 }
 
-.footer .footer-block1 .social .social-ico {
+.footer .footer_box .footer-block1 .social .social-ico {
   width: 1.75vw;
 }
 
-.footer .footer-block1 .footer-content {
+.footer .footer_box .footer-block1 .footer-content {
   width: 13vw;
 }
 
-.footer .footer-about .footer-content {
+.footer .footer_box .footer-about .footer-content {
   width: 13vw;
 }
 
-.footer .footer-quick .links {
+.footer .footer_box .footer-quick .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1328,17 +1328,17 @@
           justify-content: space-between;
 }
 
-.footer .footer-quick a {
+.footer .footer_box .footer-quick a {
   color: #ffffff;
 }
 
-.footer .footer-contact .contact {
+.footer .footer_box .footer-contact .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer .footer-contact .contact .contact-details {
+.footer .footer_box .footer-contact .contact .contact-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1349,7 +1349,7 @@
   margin-right: 1vw;
 }
 
-.footer .footer-contact .contact .contact-items {
+.footer .footer_box .footer-contact .contact .contact-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1362,7 +1362,7 @@
           align-items: flex-start;
 }
 
-.footer .footer-contact .contact .contact-items img {
+.footer .footer_box .footer-contact .contact .contact-items img {
   width: 1vw;
 }
 
@@ -1752,6 +1752,22 @@ body::-webkit-scrollbar-thumb {
   color: #011e56;
 }
 
+.top-arrow {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: #515e63;
+  background-image: url("../../assets/images/UpArrow.svg");
+  background-position: center;
+  background-size: contain;
+  display: none;
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 @-webkit-keyframes animate-svg-fill-1 {
   0% {
     fill: transparent;
@@ -1860,6 +1876,12 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+  }
+  .top-arrow {
+    width: 10vw;
+    height: 10vw;
+    bottom: 5vw;
+    right: 5vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
