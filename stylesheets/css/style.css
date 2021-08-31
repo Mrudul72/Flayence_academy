@@ -334,7 +334,8 @@
     display: none;
   }
   .hero .down-arrow-container {
-    margin-top: 40vw;
+    -webkit-transform: translateY(30vw);
+            transform: translateY(30vw);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
