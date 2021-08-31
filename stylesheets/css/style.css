@@ -6,7 +6,7 @@
 /*SCSS imports*/
 .nav-bar {
   width: 100%;
-  height: 8vw;
+  height: 6vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,15 +17,17 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   padding: 0 12vw;
   top: 0;
   z-index: 1;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .nav-bar .nav-logo {
   display: none;
-  width: 2.5vw;
+  width: 2vw;
 }
 
 .nav-bar .nav-links {
@@ -79,6 +81,29 @@
   transition: all ease 0.5s;
 }
 
+/*for scroll animation*/
+.nav-scroll-active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-btn-active {
+  padding: 0.75vw 1.75vw;
+  border: solid 0.2vw #ffffff !important;
+  color: #ffffff !important;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: 0.9vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-btn-active:hover {
+  background-color: #ffffff;
+  color: #515e63;
+}
+
+/*for scroll animation end*/
 @media screen and (max-width: 480px) {
   .nav-bar {
     height: 15vw;
@@ -86,6 +111,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     overflow-x: hidden;
+    position: fixed;
   }
   .nav-bar .nav-logo {
     display: block;
@@ -132,10 +158,7 @@
   }
   .nav-bar .nav-links .nav-btn:hover {
     background-color: #ffffff;
-    color: #ffffff;
-  }
-  .nav-bar .nav-links .nav-btn:hover {
-    color: #011e56;
+    color: #515e63;
   }
   .nav-active {
     -webkit-transform: translateX(0%) !important;
