@@ -1,55 +1,31 @@
 .about_us {
   background-color: #e6edfa;
   width: 100vw;
-  .ab_img {
-    height: 100%;
-    width: 100%;
-  }
 
-  .right-section{
-    padding: 5vw;
+  .abt-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center
-  }
-  h1 {
-    @include section-heading;
-    margin-bottom: 1vw;
-  }
-  .txtab {
-    @include content-text($text-dark, 0.8vw);
-  }
-  .social-icons {
-    display: flex;
-    width: 6vw;
     justify-content: space-between;
-    img{
-        width: 2.5vw;
-    }
-    
-  }
-}
 
-@media only screen and (max-width: 600px) {
-  .about_us{
-    background-image: url("/Flayence_academy/assets/images/bg.png");
-    .ab_img{
-      display: none;
+    .ab_img {
+      height: 30vw;
+      width: 40vw;
+    }
+
+    .right-section {
+      padding: 5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     h1 {
-      font-family: "Open Sans", sans-serif;
-      font-size: 2vw;
-      text-transform: uppercase;
-      font-weight: 700;
-      color:#FFFFFF;
+      @include section-heading;
       margin-bottom: 1vw;
     }
     .txtab {
-      font-weight: 300;
-      font-family: Poppins;
-      color: #FFFFFF;
-      font-size: 0.8vw;
-      line-height: 1.5vw;
+      @include content-text($text-dark, 0.8vw);
+    }
+    .social-icons-light{
+      display: none;
     }
     .social-icons {
       display: flex;
@@ -57,6 +33,60 @@
       justify-content: space-between;
       img {
         width: 2.5vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about_us {
+    background-image: url("../../assets/images/img3.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+    .abt-container {
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(3px);
+
+      .ab_img {
+        display: none;
+      }
+
+      .right-section {
+        padding: 20vw 12vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+      }
+      h1 {
+        @include section-heading;
+        margin-bottom: 1vw;
+        font-size: 6vw;
+        color: $text-light;
+      }
+      .txtab {
+        @include content-text($text-light, 3.3vw);
+        line-height: 2;
+        margin-top: 5vw;
+      }
+
+      .social-icons{
+        display: none;
+      }
+
+      .social-icons-light {
+        margin-top: 5vw;
+        display: flex;
+        width: 25vw;
+        justify-content: space-between;
+        img {
+          width: 10vw;
+        }
       }
     }
   }

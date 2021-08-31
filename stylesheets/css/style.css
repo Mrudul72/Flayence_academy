@@ -689,12 +689,21 @@
   width: 100vw;
 }
 
-.about_us .ab_img {
-  height: 100%;
-  width: 100%;
+.about_us .abt-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.about_us .right-section {
+.about_us .abt-container .ab_img {
+  height: 30vw;
+  width: 40vw;
+}
+
+.about_us .abt-container .right-section {
   padding: 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,7 +717,7 @@
           justify-content: center;
 }
 
-.about_us h1 {
+.about_us .abt-container h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 2vw;
   text-transform: uppercase;
@@ -717,7 +726,7 @@
   margin-bottom: 1vw;
 }
 
-.about_us .txtab {
+.about_us .abt-container .txtab {
   font-weight: 300;
   font-family: Poppins;
   color: #011e56;
@@ -725,7 +734,11 @@
   line-height: 1.5vw;
 }
 
-.about_us .social-icons {
+.about_us .abt-container .social-icons-light {
+  display: none;
+}
+
+.about_us .abt-container .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -735,43 +748,76 @@
           justify-content: space-between;
 }
 
-.about_us .social-icons img {
+.about_us .abt-container .social-icons img {
   width: 2.5vw;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .about_us {
-    background-image: url("/Flayence_academy/assets/images/bg.png");
+    background-image: url("../../assets/images/img3.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
   }
-  .about_us .ab_img {
+  .about_us .abt-container {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+  }
+  .about_us .abt-container .ab_img {
     display: none;
   }
-  .about_us h1 {
+  .about_us .abt-container .right-section {
+    padding: 20vw 12vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about_us .abt-container h1 {
     font-family: "Open Sans", sans-serif;
     font-size: 2vw;
     text-transform: uppercase;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #011e56;
     margin-bottom: 1vw;
+    font-size: 6vw;
+    color: #ffffff;
   }
-  .about_us .txtab {
+  .about_us .abt-container .txtab {
     font-weight: 300;
     font-family: Poppins;
-    color: #FFFFFF;
-    font-size: 0.8vw;
+    color: #ffffff;
+    font-size: 3.3vw;
     line-height: 1.5vw;
+    line-height: 2;
+    margin-top: 5vw;
   }
-  .about_us .social-icons {
+  .about_us .abt-container .social-icons {
+    display: none;
+  }
+  .about_us .abt-container .social-icons-light {
+    margin-top: 5vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 6vw;
+    width: 25vw;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .about_us .social-icons img {
-    width: 2.5vw;
+  .about_us .abt-container .social-icons-light img {
+    width: 10vw;
   }
 }
 
@@ -1442,6 +1488,11 @@ select:invalid {
     padding: 6vw 5vw;
   }
   .reg-section .reg-form-container .section-heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #011e56;
     font-size: 6vw;
   }
   .reg-section .reg-form-container .max-width-btn {
