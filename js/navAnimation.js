@@ -31,7 +31,7 @@ navSlide();
 
 $(function() {
   $(window).on("scroll", function() {
-      if($(window).scrollTop() > 100) {
+      if($(window).scrollTop() > 20) {
           $(".nav-bar").addClass("nav-scroll-active");
           $(".nav-btn").addClass("nav-btn-active");
           $(".nav-bar").css("justify-content", "space-between");
