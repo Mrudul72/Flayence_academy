@@ -1217,61 +1217,210 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 4vw;
-  margin: 10vw 0;
-}
-
-.video-section .active-video-container {
-  height: 30vw;
-  width: 35vw;
-}
-
-.video-section .active-video-container .active-video {
-  height: 100%;
-  width: 100%;
-  -webkit-box-shadow: 1.5vw 1.5vw rgba(230, 237, 250, 0.8);
-          box-shadow: 1.5vw 1.5vw rgba(230, 237, 250, 0.8);
-}
-
-.video-section .video-right-section {
-  margin-left: 3vw;
-  padding: 2vw;
-  padding-bottom: 0;
-  width: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 15vw 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*jssor slider loading skin spin css*/
+  /*jssor slider arrow skin 106 css*/
+  /*jssor slider thumbnail skin 101 css*/
 }
 
-.video-section .video-right-section .section-heading {
-  margin-top: 3vw;
+.video-section .video-section-heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #011e56;
+  text-align: center;
 }
 
-.video-section .video-right-section .thumbnail-container {
+.video-section .video-section-container {
+  position: relative;
+  margin: 0 auto;
+  top: 5vw;
+  left: 0px;
+  width: 980px;
+  height: 480px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.video-section .active-video {
+  cursor: default;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 980px;
+  height: 380px;
+  overflow: hidden;
+}
+
+.video-section .jssorl-009-spin img {
+  -webkit-animation-name: jssorl-009-spin;
+          animation-name: jssorl-009-spin;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes jssorl-009-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes jssorl-009-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.video-section .jssora106 {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+.video-section .jssora106 .c {
+  fill: #fff;
+  opacity: 0.3;
+}
+
+.video-section .jssora106 .a {
+  fill: none;
+  stroke: #000;
+  stroke-width: 350;
+  stroke-miterlimit: 10;
+}
+
+.video-section .jssora106:hover .c {
+  opacity: 0.5;
+}
+
+.video-section .jssora106:hover .a {
+  opacity: 0.8;
+}
+
+.video-section .jssora106.jssora106dn .c {
+  opacity: 0.2;
+}
+
+.video-section .jssora106.jssora106dn .a {
+  opacity: 1;
+}
+
+.video-section .jssora106.jssora106ds {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.video-section .jssort101 .p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #000;
+}
+
+.video-section .jssort101 .p .cv {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  height: 100%;
+  border: 2px solid #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1;
 }
 
-.video-section .video-right-section .video-thumbnail {
-  height: 15vw;
-  width: 18vw;
-  -webkit-box-shadow: 0px 20px 40px rgba(65, 86, 128, 0.2);
-          box-shadow: 0px 20px 40px rgba(65, 86, 128, 0.2);
+.video-section .jssort101 .a {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 400;
+  stroke-miterlimit: 10;
+  visibility: hidden;
+}
+
+.video-section .jssort101 .p:hover .cv, .video-section .jssort101 .p.pdn .cv {
+  border: none;
+  border-color: transparent;
+}
+
+.video-section .jssort101 .p:hover {
+  padding: 2px;
+}
+
+.video-section .jssort101 .p:hover .cv {
+  background-color: black;
+  opacity: 0.35;
+}
+
+.video-section .jssort101 .p:hover.pdn {
+  padding: 0;
+}
+
+.video-section .jssort101 .p:hover.pdn .cv {
+  border: 2px solid #fff;
+  background: none;
+  opacity: 0.35;
+}
+
+.video-section .jssort101 .pav .cv {
+  border-color: #fff;
+  opacity: 0.35;
+}
+
+.video-section .jssort101 .pav .a {
+  visibility: visible;
+}
+
+.video-section .jssort101 .p:hover .a {
+  visibility: visible;
+}
+
+.video-section .jssort101 .t {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  opacity: 0.6;
+}
+
+.video-section .jssort101 .pav .t, .video-section .jssort101 .p:hover .t {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 480px) {
+  .video-section-heading {
+    margin-top: 4vw;
+    font-family: "Open Sans", sans-serif;
+    font-size: 6vw !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #011e56;
+  }
 }
 
 .footer {
