@@ -1,156 +1,290 @@
-.package-section{
-
-  
+.package-section {
   padding-top: 8vw;
   padding-bottom: 5vw;
 
-  .pkg-sec-container{
+  .pkg-sec-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    .package-section-container{
+    .package-section-container {
       display: flex;
       width: 40vw;
-      justify-content:space-between;
-    .packages {
-      height: 28vw;
-      width: 18vw;
-      padding: 2vw;
-      color: $text-dark;
-      background-color: $secondary-light;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      box-shadow: 0px 20px 40px rgba($color: #415680, $alpha: 0.2);
-      .pkg-heading {
-        @include content-heading($text-dark, 1.2vw);
-      }
-      .pkg-contents-container {
-        width: 100%;
+      justify-content: space-between;
+      .packages {
+        height: 28vw;
+        width: 18vw;
+        padding: 2vw;
+        color: $text-dark;
+        background-color: $secondary-color;
         display: flex;
-        align-items: center;
         flex-direction: column;
-        .pkg-content{
-          width: 80%;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0px 20px 40px rgba($color: #415680, $alpha: 0.2);
+        .pkg-heading {
+          @include content-heading($text-dark, 1.2vw);
+        }
+        .pkg-contents-container {
+          width: 100%;
           display: flex;
-          justify-content: start;
-          margin: 0.5vw 0;
-          .tick{
-            width: 1.1vw;
-          }
-          div{
-            padding-left: 1vw;
-            @include content-text($text-dark, 0.8vw);
+          align-items: center;
+          flex-direction: column;
+          .pkg-content {
+            width: 80%;
+            display: flex;
+            justify-content: start;
+            margin: 0.5vw 0;
+            .tick {
+              width: 1.1vw;
+            }
+            div {
+              padding-left: 1vw;
+              @include content-text($text-dark, 0.8vw);
+            }
           }
         }
-        
+        .max-width-btn {
+          @include outline-button($text-dark, 0.8vw, $text-light);
+          margin-top: 1vw;
+          width: 100%;
+        }
+        .pkg-ico {
+          width: 7vw;
+          margin: 1vw;
+        }
+        .price {
+          display: flex;
+          width: 80%;
+          justify-content: center;
+          align-items: center;
+          .rs {
+            font-size: 0.85vw;
+          }
+          .amt {
+            margin-left: 1vw;
+            font-size: 1.2vw;
+          }
+        }
       }
-      .max-width-btn {
+      .active-pkg {
+        background-color: $primary-color;
+        color: $text-light;
+        height: 30vw;
+        transform: translateY(-1vw);
+        box-shadow: 0px 20px 40px rgba($color: #515e63, $alpha: 0.3);
+        .pkg-heading {
+          @include content-heading($text-light, 1.5vw);
+        }
+        .pkg-contents-container {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          .pkg-content {
+            width: 80%;
+            display: flex;
+            justify-content: start;
+            div {
+              padding-left: 1vw;
+              @include content-text($text-light, 0.9vw);
+            }
+          }
+        }
+        .max-width-btn {
+          @include outline-button($text-light, 0.9vw, $primary-color);
+          margin-top: 1vw;
+          width: 100%;
+        }
+        .pkg-ico {
+          width: 8vw;
+          margin: 1vw;
+        }
+        .price {
+          .rs {
+            font-size: 0.9vw;
+          }
+          .amt {
+            font-size: 1.4vw;
+          }
+        }
+      }
+    }
+
+    .pkg-sec-content-container {
+      width: 20vw;
+      margin: 4vw;
+      .pkg-section-heading {
+        @include section-heading();
+      }
+      .section-description {
+        line-height: 2;
+        color: $text-dark;
+        margin-top: 1vw;
+        font-size: 0.8vw;
+        font-weight: 300;
+        letter-spacing: 0.05vw;
+      }
+      .pkg-know-more-btn {
         @include outline-button($text-dark, 0.8vw, $text-light);
-        margin-top: 1vw;
-        width: 100%;
-      }
-      .pkg-ico {
-        width: 7vw;
-        margin: 1vw;
-      }
-      .price {
-        display: flex;
-        width: 80%;
-        justify-content: center;
-        align-items: center;
-        .rs {
-          font-size: 0.85vw;
-        }
-        .amt {
-          margin-left: 1vw;
-          font-size: 1.2vw;
-        }
-      }
-      
-    }
-    .active-pkg {
-      background-color: $primary-color;
-      color: $text-light;
-      height: 30vw;
-      transform: translateY(-1vw);
-      box-shadow: 0px 20px 40px rgba($color: #515e63, $alpha: 0.3);
-      .pkg-heading {
-        @include content-heading($text-light, 1.5vw);
-      }
-      .pkg-contents-container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        .pkg-content{
-          width: 80%;
-          display: flex;
-          justify-content: start;
-          div{
-            padding-left: 1vw;
-            @include content-text($text-light, 0.9vw);
-          }
-        }
-        
-      }
-      .max-width-btn {
-        @include outline-button($text-light, 0.9vw, $primary-color);
-        margin-top: 1vw;
-        width: 100%;
-      }
-      .pkg-ico {
-        width: 8vw;
-        margin: 1vw;
-      }
-      .price {
-        .rs {
-          font-size: 0.9vw;
-        }
-        .amt {
-          font-size: 1.4vw;
-        }
       }
     }
   }
-
-.pkg-sec-content-container{
-  width: 20vw;
-  margin: 4vw;
-  .pkg-section-heading {
-    @include section-heading();
-  }
-  .section-description {
-    line-height: 2;
-    color: $text-dark;
-    margin-top: 1vw;
-    font-size: 0.8vw;
-    font-weight: 300;
-    letter-spacing: 0.05vw;
-  }
-  .pkg-know-more-btn{
-      @include outline-button($text-dark, 0.8vw, $text-light);
-  }
-
 }
-}    
-    
 
-
+.pkg-ex{
+  transform: translateX(34%);
 }
 
 
 @media only screen and (max-width: 480px) {
-  .package-section{
-    display: flex;
-    justify-content:space-around;
-    padding-top: 8vw;
-    padding-bottom: 5vw;
-  
+  .package-section {
+    padding: 20vw 0;
+
+    .pkg-sec-container {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      .package-section-container {
+        display: flex;
+        width: 125vw;
+        height: 100vw;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: auto;
+        margin-top: 2vw;
+        transform: translateX(-34%);
+        .packages {
+          height: 80vw;
+          width: 60vw;
+          padding: 4vw;
+          color: $text-dark;
+          background-color: $secondary-color;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          box-shadow: 10px 20px 40px rgba($color: #415680, $alpha: 0);
+          .pkg-heading {
+            @include content-heading($text-dark, 4.2vw);
+          }
+          .pkg-contents-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .pkg-content {
+              width: 80%;
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              height: 6vw;
+              .tick {
+                width: 3vw;
+              }
+              div {
+                padding-left: 1vw;
+                @include content-text($text-dark, 3vw);
+              }
+            }
+          }
+          .max-width-btn {
+            @include outline-button-mob($text-dark, 3vw, $text-light);
+            margin-top: 1vw;
+            width: 100%;
+          }
+          .pkg-ico {
+            width: 20vw;
+            margin: 1vw;
+          }
+          .price {
+            display: flex;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            .rs {
+              font-size: 2vw;
+            }
+            .amt {
+              margin-left: 1vw;
+              font-size: 3.8vw;
+            }
+          }
+        }
+        .active-pkg {
+          background-color: $primary-color;
+          color: $text-light;
+          height: 90vw;
+          //width: 60vw;
+          box-shadow: 10px 20px 40px rgba($color: #515e63, $alpha: 0);
+          .pkg-heading {
+            @include content-heading($text-light, 4.5vw);
+          }
+          .pkg-contents-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .pkg-content {
+              width: 80%;
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              height: 6vw;
+              .tick {
+                width: 3vw;
+              }
+              div {
+                padding-left: 1vw;
+                @include content-text($text-light, 3.3vw);
+              }
+            }
+          }
+          .max-width-btn {
+            @include outline-button-mob($text-light, 3.3vw, $primary-color);
+            margin-top: 1vw;
+            width: 100%;
+          }
+          .pkg-ico {
+            width: 20vw;
+            margin: 2vw;
+          }
+          .price {
+            .rs {
+              font-size: 2vw;
+            }
+            .amt {
+              font-size: 4.2vw;
+            }
+          }
+        }
+      }
+
+      .pkg-sec-content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        margin: 4vw;
+        transform: translateX(-8vw);
+        .pkg-section-heading {
+          @include section-heading();
+          font-size: 6vw;
+        }
+        .section-description {
+          line-height: 2;
+          color: $text-dark;
+          margin-top: 1vw;
+          font-size: 3.3vw;
+          font-weight: 300;
+          letter-spacing: 0.05vw;
+          text-align: center;
+        }
+        .pkg-know-more-btn {
+          @include outline-button-mob($text-dark, 3.3vw, $text-light);
+        }
+      }
+    }
   }
 }
-
-
-
