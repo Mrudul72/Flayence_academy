@@ -1,12 +1,18 @@
 .package-section{
 
-  display: flex;
-  justify-content:space-around;
+  
   padding-top: 8vw;
   padding-bottom: 5vw;
 
   .pkg-sec-container{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    .package-section-container{
+      display: flex;
+      width: 40vw;
+      justify-content:space-between;
     .packages {
       height: 28vw;
       width: 18vw;
@@ -108,25 +114,43 @@
         }
       }
     }
-    
-    .pkg-section-heading {
-      @include section-heading();
-    }
-    .section-description {
-      line-height: 2;
-      color: $text-dark;
-      margin-top: 1vw;
-      font-size: 0.8vw;
-      font-weight: 300;
-      letter-spacing: 0.05vw;
-    }
-    .pkg-know-more-btn{
-        @include outline-button($text-dark, 0.8vw, $text-light);
-    }
-
   }
 
-  
+.pkg-sec-content-container{
+  width: 20vw;
+  margin: 4vw;
+  .pkg-section-heading {
+    @include section-heading();
+  }
+  .section-description {
+    line-height: 2;
+    color: $text-dark;
+    margin-top: 1vw;
+    font-size: 0.8vw;
+    font-weight: 300;
+    letter-spacing: 0.05vw;
+  }
+  .pkg-know-more-btn{
+      @include outline-button($text-dark, 0.8vw, $text-light);
+  }
 
 }
+}    
+    
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  .package-section{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 8vw;
+    padding-bottom: 5vw;
+  
+  }
+}
+
+
 
