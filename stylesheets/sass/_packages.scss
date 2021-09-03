@@ -149,7 +149,7 @@
         display: flex;
         width: 115vw;
         height: 100vw;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         overflow-x: auto;
         margin-top: 2vw;
@@ -213,6 +213,7 @@
           }
         }
         .active-pkg {
+          margin-left: 5vw;
           background-color: $primary-color;
           color: $text-light;
           height: 90vw;
