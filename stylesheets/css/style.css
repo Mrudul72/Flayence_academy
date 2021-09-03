@@ -804,8 +804,8 @@
   }
   .package-section .pkg-sec-container .package-section-container .packages {
     height: 80vw;
-    width: 50vw;
-    padding: 4vw 4.5vw;
+    width: 55vw;
+    padding: 4vw;
     color: #011e56;
     background-color: #e6edfa;
     display: -webkit-box;
