@@ -49,6 +49,8 @@
           @include outline-button($text-dark, 0.8vw, $text-light);
           margin-top: 1vw;
           width: 100%;
+          text-align: center;
+          text-decoration: none;
         }
         .pkg-ico {
           width: 7vw;

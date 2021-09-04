@@ -73,3 +73,12 @@ const pkgActive = () => {
 };
 
 pkgActive();
+
+$(document).ready(function () {
+  $("#excPkg").click(function () {
+    $("#pkgName option:contains('Exclusive')").attr("selected", true);
+  });
+  $("#proPkg").click(function () {
+    $("#pkgName option:contains('Professional')").attr("selected", true);
+  });
+});
