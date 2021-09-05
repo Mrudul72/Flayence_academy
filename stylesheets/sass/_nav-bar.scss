@@ -66,6 +66,30 @@
 }
 /*for scroll animation end*/
 
+.dark-nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: $primary-color !important;
+  .nav-btn {
+    @include outline-button($text-light, 0.9vw, $primary-color);
+  }
+  .nav-logo{
+    display: block;
+  }
+
+  a{
+    color: $text-light !important;
+    transition: 0.3s;
+
+    &:hover{
+      font-size: 1.1vw;
+      text-decoration: none;
+    }
+  }
+  
+  
+}
+
 @media screen and (max-width: 480px) {
   .nav-bar {
     height: 15vw;
