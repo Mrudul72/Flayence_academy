@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
 
     if($uploadStatus == 1){
         // Recipient
-        $toEmail = "liginabraham@mca.ajce.in";
+        $toEmail = "mrudulathakadiyel@mca.ajce.in";
         // Sender
         $from = 'info@flayence.com';
         $fromName = 'Flayence Academy';
