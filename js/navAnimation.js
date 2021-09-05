@@ -31,6 +31,7 @@ navSlide();
 
 $(function() {
   $(window).on("scroll", function() {
+    if (window.innerWidth > 480) {
       if($(window).scrollTop() > 20) {
           $(".nav-bar").addClass("nav-scroll-active");
           $(".nav-btn").addClass("nav-btn-active");
@@ -47,6 +48,26 @@ $(function() {
          $(".nav-contact").css("color", "#515e63");
          
       }
+    }
+    else{
+      if($(window).scrollTop() > 20) {
+        $(".nav-bar").addClass("nav-scroll-active");
+        $(".nav-btn").addClass("nav-btn-active");
+        
+        
+        $(".nav-contact").css("color", "white");
+        
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $(".nav-bar").removeClass("nav-scroll-active");
+       $(".nav-btn").removeClass("nav-btn-active");
+       
+       
+       $(".nav-contact").css("color", "#515e63");
+       
+    }
+
+    }
   });
 });
 
