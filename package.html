@@ -16,78 +16,21 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+
+    <script src="./js/loading.js"></script>
+
   </head>
-  <style>
-    body {
-      background-color: #f8f9fa !important;
-      margin-top: 20px;
-    }
-
-    .text-custom,
-    .navbar-custom .navbar-nav li a:hover,
-    .navbar-custom .navbar-nav li a:active,
-    .navbar-custom .navbar-nav li.active a,
-    .service-box .services-icon,
-    .price-features p i,
-    .faq-icon,
-    .social .social-icon:hover {
-      color: #f6576e !important;
-    }
-
-    .bg-custom,
-    .btn-custom,
-    .timeline-page .timeline-item .date-label-left::after,
-    .timeline-page .timeline-item .duration-right::after,
-    .back-to-top:hover {
-      background-color: #f6576e;
-    }
-
-    .btn-custom,
-    .custom-form .form-control:focus,
-    .social .social-icon:hover,
-    .registration-input-box:focus {
-      border-color: #f6576e;
-    }
-
-    .service-box .services-icon,
-    .price-features p i {
-      background-color: rgba(246, 87, 110, 0.1);
-    }
-
-    .btn-custom:hover,
-    .btn-custom:focus,
-    .btn-custom:active,
-    .btn-custom.active,
-    .btn-custom.focus,
-    .btn-custom:active,
-    .btn-custom:focus,
-    .btn-custom:hover,
-    .open > .dropdown-toggle.btn-custom {
-      border-color: #e45267;
-      background-color: #e45267;
-    }
-
-    .price-box {
-      padding: 40px 50px;
-    }
-
-    .plan-price h1 span {
-      font-size: 16px;
-      color: #000;
-    }
-
-    .price-features p i {
-      height: 20px;
-      width: 20px;
-      display: inline-block;
-      text-align: center;
-      line-height: 20px;
-      font-size: 14px;
-      border-radius: 50%;
-      margin-right: 20px;
-    }
-  </style>
+  
   <body>
+	 <!--loader-->
+	 <div id="loader" class="loading-container">
+		<svg width="50" height="83" viewBox="0 0 50 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M49.7962 10.9254L35.007 0.998047L0.0141602 24.3394V44.1431L49.7962 10.9254Z" fill="#00349B" class="svg-elem-1"></path>
+			<path d="M0 49.1955V68.9968L43.0777 40.2407L28.198 30.3887L0 49.1955Z" fill="#FFCC01" class="svg-elem-2"></path>
+			<path d="M16.4385 82.5351V63.084L1.80713 72.8411L16.4385 82.5351Z" fill="#FFCC01" class="svg-elem-3"></path>
+			</svg>
+	</div>
+
     <!--Nav Section Starts-->
     <nav class="nav-bar dark-nav">
       <a href="#"
@@ -240,7 +183,9 @@
                 <div>Individual study materials</div>
               </div>
             </div>
-            <a href="#reg-section" id="excPkg" class="max-width-btn">Choose</a>
+            <a href="./index.html#reg-section" id="excPkg" class="max-width-btn"
+              >Choose</a
+            >
           </div>
         </div>
         <div class="col-lg-6">
@@ -350,7 +295,9 @@
                 <div>Individual study materials</div>
               </div>
             </div>
-            <a href="#reg-section" id="proPkg" class="max-width-btn">Choose</a>
+            <a href="./index.html#reg-section" id="proPkg" class="max-width-btn"
+              >Choose</a
+            >
           </div>
         </div>
       </div>
@@ -460,46 +407,8 @@
       crossorigin="anonymous"
     ></script>
 
-	<script src="./js/navAnimation.js"></script>
-
-    <script>
-      const exclusive = document.querySelector("#exclusive-pkg");
-      const pro = document.querySelector("#pro-pkg");
-      const pkg = document.querySelector("#pkg-sec");
-      const proTick = document.querySelectorAll(".pro-tick");
-      const excTick = document.querySelectorAll(".exc-tick");
-      const proIco = document.querySelector("#pro-ico");
-      const excIco = document.querySelector("#exc-ico");
-      const pkgActive = () => {
-        if (window.innerWidth > 480) {
-          exclusive.addEventListener("click", () => {
-            exclusive.classList.add("active-pkg");
-            pro.classList.remove("active-pkg");
-            excIco.src = "./assets/images/exclusive-ico-light.svg";
-            proIco.src = "./assets/images/pro-ico-dark.svg";
-            for (eachTick of excTick) {
-              eachTick.src = "./assets/images/tick-light.svg";
-            }
-            for (eachTick of proTick) {
-              eachTick.src = "./assets/images/tick.svg";
-            }
-          });
-          pro.addEventListener("click", () => {
-            pro.classList.add("active-pkg");
-            exclusive.classList.remove("active-pkg");
-            proIco.src = "./assets/images/pro-ico.svg";
-            excIco.src = "./assets/images/exclusive-ico.svg";
-            for (eachTick of excTick) {
-              eachTick.src = "./assets/images/tick.svg";
-            }
-            for (eachTick of proTick) {
-              eachTick.src = "./assets/images/tick-light.svg";
-            }
-          });
-        }
-      };
-
-      pkgActive();
-    </script>
+    <script src="./js/navAnimation.js"></script>
+	<script src="./js/pkgPageAnim.js"></script>
+    
   </body>
 </html>
