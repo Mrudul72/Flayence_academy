@@ -1606,17 +1606,19 @@
         -ms-flex-align: center;
             align-items: center;
     height: 8vw;
+    margin: 2vw 0;
   }
   .pkg-pg-container .pkg-box-container .packages .pkg-contents-container .pkg-content .tick {
     width: 3vw;
   }
   .pkg-pg-container .pkg-box-container .packages .pkg-contents-container .pkg-content div {
-    padding-left: 1vw;
     font-weight: 300;
     font-family: Poppins;
     color: #011e56;
     font-size: 3.3vw;
     line-height: 1.5vw;
+    height: 100%;
+    line-height: 1.5;
   }
   .pkg-pg-container .pkg-box-container .packages .max-width-btn {
     padding: 2vw 3vw;
@@ -1684,17 +1686,19 @@
         -ms-flex-align: center;
             align-items: center;
     height: 8vw;
+    margin: 2vw 0;
   }
   .pkg-pg-container .pkg-box-container .active-pkg .pkg-contents-container .pkg-content .tick {
     width: 3vw;
   }
   .pkg-pg-container .pkg-box-container .active-pkg .pkg-contents-container .pkg-content div {
-    padding-left: 1vw;
     font-weight: 300;
     font-family: Poppins;
     color: #ffffff;
     font-size: 3.3vw;
     line-height: 1.5vw;
+    height: 100%;
+    line-height: 1.5;
   }
   .pkg-pg-container .pkg-box-container .active-pkg .max-width-btn {
     padding: 2vw 3vw;

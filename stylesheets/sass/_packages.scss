@@ -580,12 +580,15 @@
             justify-content: start;
             align-items: center;
             height: 8vw;
+            margin: 2vw 0;
             .tick {
               width: 3vw;
             }
             div {
-              padding-left: 1vw;
+              
               @include content-text($text-dark, 3.3vw);
+              height: 100%;
+              line-height: 1.5;
             }
           }
         }
@@ -626,12 +629,16 @@
             justify-content: start;
             align-items: center;
             height: 8vw;
+            margin: 2vw 0;
             .tick {
               width: 3vw;
             }
             div {
-              padding-left: 1vw;
+              
               @include content-text($text-light, 3.3vw);
+              height: 100%;
+              line-height: 1.5;
+              
             }
           }
         }
