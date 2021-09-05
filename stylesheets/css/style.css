@@ -1354,13 +1354,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 1vw;
+  padding: 0 1vw;
 }
 
 .pkg-pg-container .pkg-box-container .packages .pkg-contents-container .pkg-content {
-  width: 80%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
@@ -1369,15 +1375,22 @@
 
 .pkg-pg-container .pkg-box-container .packages .pkg-contents-container .pkg-content .tick {
   width: 1.1vw;
+  margin-left: 1.5vw;
 }
 
 .pkg-pg-container .pkg-box-container .packages .pkg-contents-container .pkg-content div {
-  padding-left: 1vw;
   font-weight: 300;
   font-family: Poppins;
   color: #011e56;
   font-size: 0.8vw;
   line-height: 1.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .pkg-pg-container .pkg-box-container .packages .max-width-btn {
@@ -1458,10 +1471,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 1vw;
 }
 
 .pkg-pg-container .pkg-box-container .active-pkg .pkg-contents-container .pkg-content {
-  width: 80%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1471,7 +1485,6 @@
 }
 
 .pkg-pg-container .pkg-box-container .active-pkg .pkg-contents-container .pkg-content div {
-  padding-left: 1vw;
   font-weight: 300;
   font-family: Poppins;
   color: #ffffff;
@@ -1709,6 +1722,174 @@
   }
   .pkg-pg-container .pkg-box-container .active-pkg .price .amt {
     font-size: 4.2vw;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1366px) {
+  .pkg-pg-container {
+    padding: 0 10vw !important;
+  }
+  .pkg-pg-container .pkg-section-heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #011e56;
+  }
+  .pkg-pg-container .section-description {
+    font-size: 1vw !important;
+    font-weight: 300;
+  }
+  .pkg-pg-container .pkg-box-container .packages .pkg-heading {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.4vw;
+    color: #011e56;
+    letter-spacing: 0.05vw;
+  }
+  .pkg-pg-container .pkg-box-container .packages .pkg-contents-container .pkg-content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .pkg-pg-container .pkg-box-container .packages .pkg-contents-container .pkg-content .tick {
+    margin-left: 1.5vw;
+    width: 1.1vw;
+  }
+  .pkg-pg-container .pkg-box-container .packages .pkg-contents-container .pkg-content div {
+    padding-left: 1vw;
+    font-weight: 300;
+    font-family: Poppins;
+    color: #011e56;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .pkg-pg-container .pkg-box-container .packages .max-width-btn {
+    padding: 0.75vw 1.75vw;
+    border: solid 0.2vw #011e56;
+    color: #011e56;
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 3px;
+    font-size: 1vw;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-top: 1vw;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .pkg-pg-container .pkg-box-container .packages .max-width-btn:hover {
+    background-color: #011e56;
+    color: #ffffff;
+  }
+  .pkg-pg-container .pkg-box-container .packages .pkg-ico {
+    width: 7vw;
+    margin: 1vw;
+  }
+  .pkg-pg-container .pkg-box-container .packages .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pkg-pg-container .pkg-box-container .packages .price .rs {
+    font-size: 0.85vw;
+  }
+  .pkg-pg-container .pkg-box-container .packages .price .amt {
+    margin-left: 1vw;
+    font-size: 1.4vw;
+  }
+  .pkg-pg-container .pkg-box-container .active-pkg {
+    width: 90%;
+  }
+  .pkg-pg-container .pkg-box-container .active-pkg .pkg-heading {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.6vw;
+    color: #ffffff;
+    letter-spacing: 0.05vw;
+  }
+  .pkg-pg-container .pkg-box-container .active-pkg .pkg-contents-container .pkg-content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 0.75vw 0;
+  }
+  .pkg-pg-container .pkg-box-container .active-pkg .pkg-contents-container .pkg-content .tick {
+    margin-left: 1.5vw;
+    width: 1.1vw;
+  }
+  .pkg-pg-container .pkg-box-container .active-pkg .pkg-contents-container .pkg-content div {
+    padding-left: 1vw;
+    font-weight: 300;
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .pkg-pg-container .pkg-box-container .active-pkg .max-width-btn {
+    padding: 0.75vw 1.75vw;
+    border: solid 0.2vw #ffffff;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 3px;
+    font-size: 1.1vw;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-top: 1vw;
+    width: 100%;
+  }
+  .pkg-pg-container .pkg-box-container .active-pkg .max-width-btn:hover {
+    background-color: #ffffff;
+    color: #515e63;
+  }
+  .pkg-pg-container .pkg-box-container .active-pkg .pkg-ico {
+    width: 8vw;
+    margin: 1vw;
+  }
+  .pkg-pg-container .pkg-box-container .active-pkg .price .rs {
+    font-size: 1vw;
+  }
+  .pkg-pg-container .pkg-box-container .active-pkg .price .amt {
+    font-size: 1.6vw;
   }
 }
 
