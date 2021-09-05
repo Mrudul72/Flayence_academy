@@ -297,6 +297,109 @@
 
 }
 
+@media only screen and (min-width: 700px) and (max-width: 1366px) {
+
+  .package-section {
+  
+  
+    .pkg-sec-container {
+      
+      .package-section-container {
+        
+        width: 50vw;
+        
+        .packages {
+          height: 30vw;
+          width: 20vw;
+          
+          .pkg-heading {
+            @include content-heading($text-dark, 1.4vw);
+          }
+          .pkg-contents-container {
+            
+            .pkg-content {
+              
+              .tick {
+                width: 1.1vw;
+              }
+              div {
+                padding-left: 1vw;
+                @include content-text($text-dark, 1vw);
+              }
+            }
+          }
+          .max-width-btn {
+            @include outline-button($text-dark, 1vw, $text-light);
+            
+          }
+          
+          .price {
+            
+            .rs {
+              font-size: 0.85vw;
+            }
+            .amt {
+              margin-left: 1vw;
+              font-size: 1.4vw;
+            }
+          }
+        }
+        .active-pkg {
+          
+          height: 32vw;
+          width: 22vw;
+          
+          .pkg-heading {
+            @include content-heading($text-light, 1.6vw);
+          }
+          .pkg-contents-container {
+            
+            .pkg-content {
+              
+              div {
+                padding-left: 1vw;
+                @include content-text($text-light, 1.1vw);
+              }
+            }
+          }
+          .max-width-btn {
+            @include outline-button($text-light, 1.1vw, $primary-color);
+            
+          }
+          
+          .price {
+            .rs {
+              font-size: 0.9vw;
+            }
+            .amt {
+              font-size: 1.6vw;
+            }
+          }
+        }
+      }
+  
+      .pkg-sec-content-container {
+       
+        .pkg-section-heading {
+          @include section-heading();
+        }
+        .section-description {
+          line-height: 2;
+          color: $text-dark;
+          margin-top: 1vw;
+          font-size: 1vw;
+          font-weight: 300;
+          letter-spacing: 0.05vw;
+        }
+        .pkg-know-more-btn {
+          @include outline-button($text-dark, 1vw, $text-light);
+        }
+      }
+    }
+  }
+
+}
+
 //package page
 .pkg-pg-container {
   margin: 8vw 8vw;

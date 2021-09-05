@@ -85,3 +85,30 @@
     }
 }
 }
+
+
+@media only screen and (min-width: 700px) and (max-width: 1366px) {
+
+    .col-container{
+
+    
+        .wf_img{
+            width: 6vw;
+        }
+        
+        .wf_content{
+            margin: 0.20vw 1.5vw;
+            text-align: left;
+            .wfhead{
+                @include content-heading($text-dark, 1.5vw);
+    
+            }
+            .wftext{
+                margin-top: 0.5vw;
+                @include content-text($text-dark, 1vw);
+            }
+        }
+    }
+    
+
+}

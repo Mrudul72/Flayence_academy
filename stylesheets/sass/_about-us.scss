@@ -91,3 +91,32 @@
     }
   }
 }
+
+
+@media only screen and (min-width: 700px) and (max-width: 1366px) {
+  .about_us {
+    
+  
+    .abt-container {
+      
+  
+      .ab_img {
+        height: 35vw;
+        width: 40vw;
+      }
+  
+      
+      h1 {
+        @include section-heading;
+        margin-bottom: 1vw;
+      }
+      .txtab {
+        @include content-text($text-dark, 1vw);
+        line-height: 2;
+      }
+      
+     
+    }
+  }
+
+}

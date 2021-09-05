@@ -132,3 +132,27 @@
     }
   }
 }
+
+
+
+@media only screen and (min-width: 700px) and (max-width: 1366px){
+  .hero {
+    
+    .hero-content {
+      .hero-content-container {
+        .content-text {
+
+          font-size: 1vw;
+          
+        }
+        .hero-btn {
+          @include outline-button($text-light, 1vw, $primary-color);
+          margin-top: 1vw;
+        }
+      }
+      
+    }
+    
+  }
+  
+}

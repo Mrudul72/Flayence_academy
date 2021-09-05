@@ -134,3 +134,48 @@ select:invalid {
       color: gray !important; 
   }
 }
+
+
+@media only screen and (min-width: 700px) and (max-width: 1366px) {
+  .reg-section {
+    
+    .reg-form-container {
+      
+  
+      .max-width-btn {
+        @include outline-button($text-dark, 1vw, $text-light);
+        
+      }
+      
+      .test-link {
+          
+          .t-link{
+              @include content-heading(#AB3B61, 1vw);
+              text-decoration: underline;
+          }
+          img{
+              width: 1vw;
+              height: 1vw;
+              margin-left: 0.5vw;
+          }
+      }
+      .input-field-container {
+  
+        .input-field {
+          
+          .input-lable{
+              @include content-text($text-dark, 1vw);
+              font-weight: 400;
+          }
+          .input-box{
+              
+              @include content-text($text-dark, 1.1vw);
+              
+          }
+        }
+      }
+    }
+  }
+  
+
+}

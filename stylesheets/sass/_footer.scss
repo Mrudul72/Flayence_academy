@@ -169,3 +169,42 @@
     }
   }
 }
+
+@media only screen and (min-width: 700px) and (max-width: 1366px) {
+
+  .footer {
+    .footer_box{
+    
+      .footer-block1 {
+        .logo {
+          width: 10vw;
+        }
+      }
+
+      .footer-quick{
+        .links{
+            display: flex;
+            width: 12vw;
+            justify-content: space-between;
+        }
+        a{
+            color: $text-light;
+        }
+    }
+    }
+
+  .footer-heading {
+    @include content-heading($text-light, 1.2vw);
+    margin-bottom: 1vw;
+    text-transform: uppercase;
+  }
+  .footer-content {
+    font-size: 0.8vw;
+    width: 10vw;
+    color: $text-light;
+    font-weight: 200;
+    line-height: 1.5;
+  }
+}
+
+}
