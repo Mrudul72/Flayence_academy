@@ -790,5 +790,16 @@
 
 .bg-particle{
   width: 100%;
+  height: 100%;
   margin: 14vw 0;
+  position: absolute;
+}
+@media only screen and (max-width: 480px) {
+  .bg-particle{
+    width: 100%;
+    height: 100vw;
+    transform: translateY(80%);
+    position: fixed;
+    z-index: -1;
+  }
 }
