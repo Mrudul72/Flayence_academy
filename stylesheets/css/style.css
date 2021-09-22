@@ -1897,6 +1897,11 @@
   }
 }
 
+.bg-particle {
+  width: 100%;
+  margin: 14vw 0;
+}
+
 .about_us {
   background-color: #e6edfa;
   width: 100vw;

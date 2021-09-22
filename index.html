@@ -68,36 +68,104 @@
     </nav>
     <!--Nav Section Ends-->
 
-    
-    <!--Hero Section Starts-->
-    <div class="hero" id="hero">
-      <div class="hero-background"></div>
-
-      <div class="hero-content">
-          <div class="hero-content-container">
-            <img
-              src="./assets/images/logo1.svg"
-              alt="logo-large"
-              class="logo-large"
-            />
-            <p class="content-text pt-3">
-              Our quality, diligence and the individual attention we give for every client is what makes us stand apart.
-            </p>
-            <a href="#why_flayence"><button class="hero-btn">Get Started</button></a>
-            <div class="down-arrow-container"><a href="#why_flayence"><img src="./assets/images/DownArrow.svg" alt="" class="arrow"></a></div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero" id="hero">
+            <div class="hero-background"></div>
+      
+            <div class="hero-content">
+                <div class="hero-content-container">
+                  <img
+                    src="./assets/images/logo1.svg"
+                    alt="logo-large"
+                    class="logo-large"
+                  />
+                  <p class="content-text pt-3">
+                    Take the first step towards your goal <br>
+                    Easily crack IELTS with the best possible scores in your first attempt itself
+                  </p>
+                  <a href="#why_flayence"><button class="hero-btn">Get Started</button></a>
+                  <div class="down-arrow-container"><a href="#why_flayence"><img src="./assets/images/DownArrow.svg" alt="" class="arrow"></a></div>
+                </div>
+                
+                <div class="hero-img-container" >
+                  <img
+                    class="hero-img"
+                    src="./assets/images/img2.jpg"
+                    alt="flayence_image"
+                  />
+                </div>
+            </div>
           </div>
-          
-          <div class="hero-img-container" >
-            <img
-              class="hero-img"
-              src="./assets/images/img2.jpg"
-              alt="flayence_image"
-            />
+        </div>
+        <div class="carousel-item">
+          <div class="hero" id="hero">
+            <div class="hero-background"></div>
+      
+            <div class="hero-content">
+                <div class="hero-content-container">
+                  <img
+                    src="./assets/images/logo1.svg"
+                    alt="logo-large"
+                    class="logo-large"
+                  />
+                  <p class="content-text pt-3">
+                    Online IELTS Training <br>Learn at the comfort of your own space and with unwavered attention from our trainers.
+                  </p>
+                  <a href="#why_flayence"><button class="hero-btn">Get Started</button></a>
+                  <div class="down-arrow-container"><a href="#why_flayence"><img src="./assets/images/DownArrow.svg" alt="" class="arrow"></a></div>
+                </div>
+                
+                <div class="hero-img-container" >
+                  <img
+                    class="hero-img"
+                    src="./assets/images/img3.jpg"
+                    alt="flayence_image"
+                  />
+                </div>
+            </div>
           </div>
-        
+        </div>
+        <div class="carousel-item">
+          <div class="hero" id="hero">
+            <div class="hero-background"></div>
+      
+            <div class="hero-content">
+                <div class="hero-content-container">
+                  <img
+                    src="./assets/images/logo1.svg"
+                    alt="logo-large"
+                    class="logo-large"
+                  />
+                  <p class="content-text pt-3">
+                    Programs for professionals <br>Batches with flexible session timings to cater the needs of working professionals
+                  </p>
+                  <a href="#why_flayence"><button class="hero-btn">Get Started</button></a>
+                  <div class="down-arrow-container"><a href="#why_flayence"><img src="./assets/images/DownArrow.svg" alt="" class="arrow"></a></div>
+                </div>
+                
+                <div class="hero-img-container" >
+                  <img
+                    class="hero-img"
+                    src="./assets/images/img1.jpg"
+                    alt="flayence_image"
+                  />
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
       
     </div>
+    
+    <!--Hero Section Starts-->
+   
     <!--Hero Section Ends-->
 
     <div id="why_flayence" style="position: absolute; transform: translateY(-2.5vw); z-index: -2;"></div>
@@ -800,8 +868,7 @@
           <div class="contact-details">
             <div class="contact-items">
               <img src="./assets/images/map-pin.svg" alt="">
-              <p class="footer-content">Expedia Consulants
-                6/160, first floor, Mareena Centre, Kothad, near Aster Medicity, Eranakulam - 682027</p>
+              <p class="footer-content">6/160, first floor, Mareena Centre, Kothad, near Aster Medicity, Eranakulam - 682027</p>
             </div>
             <div class="contact-items">
               <img src="./assets/images/mail.svg" alt="">
@@ -830,6 +897,8 @@
     <script>
       AOS.init();
     </script>
+
+
 
 
     <script type="text/javascript">
