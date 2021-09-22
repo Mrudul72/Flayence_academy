@@ -293,32 +293,23 @@
       }
     }
   }
-
-
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1366px) {
-
   .package-section {
-  
-  
     .pkg-sec-container {
-      
       .package-section-container {
-        
         width: 50vw;
-        
+
         .packages {
           height: 30vw;
           width: 20vw;
-          
+
           .pkg-heading {
             @include content-heading($text-dark, 1.4vw);
           }
           .pkg-contents-container {
-            
             .pkg-content {
-              
               .tick {
                 width: 1.1vw;
               }
@@ -330,11 +321,9 @@
           }
           .max-width-btn {
             @include outline-button($text-dark, 1vw, $text-light);
-            
           }
-          
+
           .price {
-            
             .rs {
               font-size: 0.85vw;
             }
@@ -345,17 +334,14 @@
           }
         }
         .active-pkg {
-          
           height: 32vw;
           width: 22vw;
-          
+
           .pkg-heading {
             @include content-heading($text-light, 1.6vw);
           }
           .pkg-contents-container {
-            
             .pkg-content {
-              
               div {
                 padding-left: 1vw;
                 @include content-text($text-light, 1.1vw);
@@ -364,9 +350,8 @@
           }
           .max-width-btn {
             @include outline-button($text-light, 1.1vw, $primary-color);
-            
           }
-          
+
           .price {
             .rs {
               font-size: 0.9vw;
@@ -377,9 +362,8 @@
           }
         }
       }
-  
+
       .pkg-sec-content-container {
-       
         .pkg-section-heading {
           @include section-heading();
         }
@@ -397,7 +381,6 @@
       }
     }
   }
-
 }
 
 //package page
@@ -418,7 +401,6 @@
   .pkg-box-container {
     padding-top: 4vw;
     .packages {
-      
       width: 80%;
       padding: 2vw;
       color: $text-dark;
@@ -429,7 +411,7 @@
       align-items: center;
       box-shadow: 0px 20px 40px rgba($color: #415680, $alpha: 0.2);
       transition: 0.3s;
-      margin-right:4vw;
+      margin-right: 4vw;
       .pkg-heading {
         @include content-heading($text-dark, 1.2vw);
       }
@@ -451,7 +433,6 @@
             margin-left: 1.5vw;
           }
           div {
-            
             @include content-text($text-dark, 0.8vw);
             display: flex;
             width: 100%;
@@ -504,7 +485,6 @@
           display: flex;
           justify-content: start;
           div {
-            
             @include content-text($text-light, 0.9vw);
           }
         }
@@ -531,7 +511,6 @@
 }
 
 @media only screen and (max-width: 480px) {
-
   //package page
   .pkg-pg-container {
     margin: 20vw 8vw;
@@ -549,11 +528,10 @@
       text-align: left;
       padding: 5vw 10vw;
     }
-  
+
     .pkg-box-container {
       padding: 5vw 10vw;
       .packages {
-        
         width: 100%;
         padding: 5vw;
         color: $text-dark;
@@ -564,7 +542,7 @@
         align-items: center;
         box-shadow: 0px 20px 40px rgba($color: #415680, $alpha: 0.2);
         transition: 0.3s;
-        margin-right:4vw;
+        margin-right: 4vw;
         .pkg-heading {
           @include content-heading($text-dark, 4.5vw);
         }
@@ -585,7 +563,6 @@
               width: 3vw;
             }
             div {
-              
               @include content-text($text-dark, 3.3vw);
               height: 100%;
               line-height: 1.5;
@@ -634,11 +611,9 @@
               width: 3vw;
             }
             div {
-              
               @include content-text($text-light, 3.3vw);
               height: 100%;
               line-height: 1.5;
-              
             }
           }
         }
@@ -662,144 +637,115 @@
       }
     }
   }
-
-  
 }
-
 
 @media only screen and (min-width: 700px) and (max-width: 1366px) {
   //package page
-.pkg-pg-container {
-  padding: 0 10vw !important;
-  .pkg-section-heading {
-    @include section-heading();
-  }
-  .section-description {
-    
-    font-size: 1vw !important;
-    font-weight: 300;
-    
-  }
+  .pkg-pg-container {
+    padding: 0 10vw !important;
+    .pkg-section-heading {
+      @include section-heading();
+    }
+    .section-description {
+      font-size: 1vw !important;
+      font-weight: 300;
+    }
 
-  .pkg-box-container {
-   
-    .packages {
-      
-      
-      .pkg-heading {
-        @include content-heading($text-dark, 1.4vw);
-      }
-      .pkg-contents-container {
-        
-        .pkg-content {
-          width: 100%;
-          display: flex;
-          flex-direction: row-reverse;
-          justify-content: start;
-          
-          .tick {
-            margin-left: 1.5vw;
-            width: 1.1vw;
-          }
-          div {
-            padding-left: 1vw;
-            @include content-text($text-dark, 1vw);
-            display: flex;
+    .pkg-box-container {
+      .packages {
+        .pkg-heading {
+          @include content-heading($text-dark, 1.4vw);
+        }
+        .pkg-contents-container {
+          .pkg-content {
             width: 100%;
-            justify-content: space-between
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: start;
+
+            .tick {
+              margin-left: 1.5vw;
+              width: 1.1vw;
+            }
+            div {
+              padding-left: 1vw;
+              @include content-text($text-dark, 1vw);
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+            }
+          }
+        }
+        .max-width-btn {
+          @include outline-button($text-dark, 1vw, $text-light);
+          margin-top: 1vw;
+          width: 100%;
+          text-align: center;
+          text-decoration: none;
+        }
+        .pkg-ico {
+          width: 7vw;
+          margin: 1vw;
+        }
+        .price {
+          display: flex;
+          width: 80%;
+          justify-content: center;
+          align-items: center;
+          .rs {
+            font-size: 0.85vw;
+          }
+          .amt {
+            margin-left: 1vw;
+            font-size: 1.4vw;
           }
         }
       }
-      .max-width-btn {
-        @include outline-button($text-dark, 1vw, $text-light);
-        margin-top: 1vw;
-        width: 100%;
-        text-align: center;
-        text-decoration: none;
-      }
-      .pkg-ico {
-        width: 7vw;
-        margin: 1vw;
-      }
-      .price {
-        display: flex;
-        width: 80%;
-        justify-content: center;
-        align-items: center;
-        .rs {
-          font-size: 0.85vw;
+      .active-pkg {
+        width: 90%;
+
+        .pkg-heading {
+          @include content-heading($text-light, 1.6vw);
         }
-        .amt {
-          margin-left: 1vw;
-          font-size: 1.4vw;
+        .pkg-contents-container {
+          .pkg-content {
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: start;
+            margin: 0.75vw 0;
+
+            .tick {
+              margin-left: 1.5vw;
+              width: 1.1vw;
+            }
+            div {
+              padding-left: 1vw;
+              @include content-text($text-light, 1.1vw);
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+            }
+          }
+        }
+        .max-width-btn {
+          @include outline-button($text-light, 1.1vw, $primary-color);
+          margin-top: 1vw;
+          width: 100%;
+        }
+        .pkg-ico {
+          width: 8vw;
+          margin: 1vw;
+        }
+        .price {
+          .rs {
+            font-size: 1vw;
+          }
+          .amt {
+            font-size: 1.6vw;
+          }
         }
       }
     }
-    .active-pkg {
-     
-      width: 90%;
-      
-      .pkg-heading {
-        @include content-heading($text-light, 1.6vw);
-      }
-      .pkg-contents-container {
-        
-        .pkg-content {
-          width: 100%;
-          display: flex;
-          flex-direction: row-reverse;
-          justify-content: start;
-          margin: 0.75vw 0;
-          
-          .tick {
-            margin-left: 1.5vw;
-            width: 1.1vw;
-          }
-          div {
-            padding-left: 1vw;
-            @include content-text($text-light, 1.1vw);
-            display: flex;
-            width: 100%;
-            justify-content: space-between
-          }
-        }
-      }
-      .max-width-btn {
-        @include outline-button($text-light, 1.1vw, $primary-color);
-        margin-top: 1vw;
-        width: 100%;
-      }
-      .pkg-ico {
-        width: 8vw;
-        margin: 1vw;
-      }
-      .price {
-        .rs {
-          font-size: 1vw;
-        }
-        .amt {
-          font-size: 1.6vw;
-        }
-      }
-    }
-  }
-}
-
-}
-
-
-.bg-particle{
-  width: 100%;
-  height: 100%;
-  margin: 14vw 0;
-  position: absolute;
-}
-@media only screen and (max-width: 480px) {
-  .bg-particle{
-    width: 100%;
-    height: 100vw;
-    transform: translateY(80%);
-    position: fixed;
-    z-index: -1;
   }
 }

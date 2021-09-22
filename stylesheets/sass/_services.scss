@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+.rightbox {
+  background-color: #515e63;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 20px 40px rgba($color: #515e63, $alpha: 0.3);
+  border-radius: 5px;
+}
+.service-section-heading {
+  @include section-heading();
+  margin-top: 6vw;
+}
+
+.rb-container {
+  margin-top: 3vw;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ul.rb {
+    margin: 2.5em 0;
+    padding: 0;
+    display: inline-block;
+
+    li {
+      list-style: none;
+      min-height: 50px;
+      border-left: 1px dashed #fff;
+      padding: 0 0 50px 30px;
+      position: relative;
+      cursor: pointer;
+
+      &:last-child {
+        border-left: 0;
+      }
+
+      &::before {
+        position: absolute;
+        left: -18px;
+        top: -5px;
+        content: " ";
+        border: 8px solid rgba(255, 255, 255, 1);
+        border-radius: 500%;
+        background: $primary-color;
+        height: 32px;
+        width: 32px;
+        transition: all 500ms ease-in-out;
+      }
+
+      &:hover::before {
+        border-color: $primary-color;
+        transition: all 0.3s ease-in-out;
+        background: $text-light;
+      }
+    }
+  }
+}
+
+ul.rb li .timestamp {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.rb-item {
+  width: 100%;
+  margin-left: 1vw;
+}
+
+.item-title {
+  color: #fff;
+}
+
+.leftbox {
+  background-color: $secondary-color;
+  box-shadow: 0px 20px 40px rgba($color: #415680, $alpha: 0.2);
+  border-radius: 5px;
+  .txt {
+    color: $text-dark;
+    padding: 2vw 0;
+    width: 100%;
+    text-align: justify;
+  }
+  .txt_head {
+    width: 100%;
+    font-size: 20px;
+
+    color: $text-dark;
+  }
+
+  ul.rb {
+    li {
+      &::before {
+        background: $text-dark;
+      }
+
+      &:hover::before {
+        border-color: $text-dark;
+
+        background: $text-light;
+      }
+    }
+  }
+}
+.txt {
+  color: #fff;
+  padding: 2vw 0;
+  width: 100%;
+  text-align: justify;
+  font-weight: 300;
+}
+.txt_head {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+.txt_small {
+  color: $text-dark;
+  margin: 0.75vw 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .service-section-heading {
+    @include section-heading();
+    font-size: 6vw;
+    margin-top: 10vw;
+  }
+  .rightbox {
+    margin: 0 5vw;
+  }
+  .rb-container {
+    margin-top: 5vw;
+  }
+
+  .bg-particle{
+    width: 100%;
+    height: 100vw;
+    transform: translateY(20%) !important;
+    position: fixed;
+    z-index: -1;
+  }
+}

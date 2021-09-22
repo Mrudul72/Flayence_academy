@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 /*SCSS imports*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 .nav-bar {
   width: 100%;
   height: 6vw;
@@ -1897,24 +1898,6 @@
   }
 }
 
-.bg-particle {
-  width: 100%;
-  height: 100%;
-  margin: 14vw 0;
-  position: absolute;
-}
-
-@media only screen and (max-width: 480px) {
-  .bg-particle {
-    width: 100%;
-    height: 100vw;
-    -webkit-transform: translateY(80%);
-            transform: translateY(80%);
-    position: fixed;
-    z-index: -1;
-  }
-}
-
 .about_us {
   background-color: #e6edfa;
   width: 100vw;
@@ -3174,6 +3157,183 @@
   }
 }
 
+.rightbox {
+  background-color: #515e63;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 20px 40px rgba(81, 94, 99, 0.3);
+          box-shadow: 0px 20px 40px rgba(81, 94, 99, 0.3);
+  border-radius: 5px;
+}
+
+.service-section-heading {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #011e56;
+  margin-top: 6vw;
+}
+
+.rb-container {
+  margin-top: 3vw;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rb-container ul.rb {
+  margin: 2.5em 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.rb-container ul.rb li {
+  list-style: none;
+  min-height: 50px;
+  border-left: 1px dashed #fff;
+  padding: 0 0 50px 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.rb-container ul.rb li:last-child {
+  border-left: 0;
+}
+
+.rb-container ul.rb li::before {
+  position: absolute;
+  left: -18px;
+  top: -5px;
+  content: " ";
+  border: 8px solid white;
+  border-radius: 500%;
+  background: #515e63;
+  height: 32px;
+  width: 32px;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.rb-container ul.rb li:hover::before {
+  border-color: #515e63;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+}
+
+ul.rb li .timestamp {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.rb-item {
+  width: 100%;
+  margin-left: 1vw;
+}
+
+.item-title {
+  color: #fff;
+}
+
+.leftbox {
+  background-color: #e6edfa;
+  -webkit-box-shadow: 0px 20px 40px rgba(65, 86, 128, 0.2);
+          box-shadow: 0px 20px 40px rgba(65, 86, 128, 0.2);
+  border-radius: 5px;
+}
+
+.leftbox .txt {
+  color: #011e56;
+  padding: 2vw 0;
+  width: 100%;
+  text-align: justify;
+}
+
+.leftbox .txt_head {
+  width: 100%;
+  font-size: 20px;
+  color: #011e56;
+}
+
+.leftbox ul.rb li::before {
+  background: #011e56;
+}
+
+.leftbox ul.rb li:hover::before {
+  border-color: #011e56;
+  background: #ffffff;
+}
+
+.txt {
+  color: #fff;
+  padding: 2vw 0;
+  width: 100%;
+  text-align: justify;
+  font-weight: 300;
+}
+
+.txt_head {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.txt_small {
+  color: #011e56;
+  margin: 0.75vw 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .service-section-heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #011e56;
+    font-size: 6vw;
+    margin-top: 10vw;
+  }
+  .rightbox {
+    margin: 0 5vw;
+  }
+  .rb-container {
+    margin-top: 5vw;
+  }
+  .bg-particle {
+    width: 100%;
+    height: 100vw;
+    -webkit-transform: translateY(20%) !important;
+            transform: translateY(20%) !important;
+    position: fixed;
+    z-index: -1;
+  }
+}
+
 .reg-section {
   width: 100vw;
   display: -webkit-box;
@@ -3611,6 +3771,13 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
 }
 
+.bg-particle {
+  width: 100%;
+  height: 100%;
+  margin: 14vw 0;
+  position: absolute;
+}
+
 @media only screen and (max-width: 480px) {
   html, body {
     width: 100%;
@@ -3623,6 +3790,14 @@ body::-webkit-scrollbar-thumb {
     height: 10vw;
     bottom: 5vw;
     right: 5vw;
+  }
+  .bg-particle {
+    width: 100%;
+    height: 100vw;
+    -webkit-transform: translateY(80%);
+            transform: translateY(80%);
+    position: fixed;
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=style.css.map */
