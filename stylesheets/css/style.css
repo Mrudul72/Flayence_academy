@@ -1956,14 +1956,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 6vw;
+  width: 10vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .about_us .abt-container .social-icons img {
   width: 2.5vw;
+}
+
+.about_us .abt-container .social-icons .wht {
+  width: 3vw !important;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
 }
 
 @media only screen and (max-width: 480px) {
@@ -2025,13 +2034,21 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 25vw;
+    width: 35vw;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .about_us .abt-container .social-icons-light img {
     width: 10vw;
+  }
+  .about_us .abt-container .social-icons-light .wht {
+    width: 12vw !important;
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
   }
 }
 
