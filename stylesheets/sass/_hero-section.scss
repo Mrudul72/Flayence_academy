@@ -33,6 +33,10 @@
         font-size: 0.8vw;
         font-weight: 300;
         letter-spacing: 0.05vw;
+        .sub-head{
+          font-size: 1vw;
+          font-weight: 600;
+        }
       }
       .hero-btn {
         @include outline-button($text-light, 0.8vw, $primary-color);
@@ -94,6 +98,10 @@
           font-size: 3.3vw;
           font-weight: 300;
           letter-spacing: 0.05vw;
+          .sub-head{
+            font-size: 3.8vw;
+            font-weight: 600;
+          }
         }
         .hero-btn {
           @include outline-button-mob($text-light, 3.3vw, $primary-color);
@@ -143,6 +151,11 @@
         .content-text {
 
           font-size: 1vw;
+
+          .sub-head{
+            font-size: 1.2vw;
+            font-weight: 600;
+          }
           
         }
         .hero-btn {

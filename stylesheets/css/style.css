@@ -297,6 +297,11 @@
   letter-spacing: 0.05vw;
 }
 
+.hero .hero-content .hero-content-container .content-text .sub-head {
+  font-size: 1vw;
+  font-weight: 600;
+}
+
 .hero .hero-content .hero-content-container .hero-btn {
   padding: 0.75vw 1.75vw;
   border: solid 0.2vw #ffffff;
@@ -385,6 +390,10 @@
     font-weight: 300;
     letter-spacing: 0.05vw;
   }
+  .hero .hero-content .hero-content-container .content-text .sub-head {
+    font-size: 3.8vw;
+    font-weight: 600;
+  }
   .hero .hero-content .hero-content-container .hero-btn {
     padding: 2vw 3vw;
     border: solid 0.5vw #ffffff;
@@ -452,6 +461,10 @@
 @media only screen and (min-width: 700px) and (max-width: 1366px) {
   .hero .hero-content .hero-content-container .content-text {
     font-size: 1vw;
+  }
+  .hero .hero-content .hero-content-container .content-text .sub-head {
+    font-size: 1.2vw;
+    font-weight: 600;
   }
   .hero .hero-content .hero-content-container .hero-btn {
     padding: 0.75vw 1.75vw;
