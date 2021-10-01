@@ -3687,9 +3687,10 @@ body::-webkit-scrollbar-thumb {
   height: 3vw;
   border-radius: 50%;
   background-color: #515e63;
-  background-image: url("../../assets/images/UpArrow.svg");
+  background-image: url("../../assets/images/whatsapp-light.svg");
   background-position: center;
-  background-size: contain;
+  background-size: 2vw 2vw;
+  background-repeat: no-repeat;
   display: none;
   position: fixed;
   bottom: 2vw;
