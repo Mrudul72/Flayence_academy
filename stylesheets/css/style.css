@@ -338,11 +338,17 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .hero-bg2 {
+    background-image: url("../../assets/images/hero-img2.jpg") !important;
+  }
+  .hero-bg3 {
+    background-image: url("../../assets/images/hero-img3.jpg") !important;
+  }
   .hero {
     height: 100vh;
     max-width: 100%;
     overflow-x: hidden;
-    background-image: url("../../assets/images/header-img.png");
+    background-image: url("../../assets/images/hero-img1.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center top;
@@ -3821,6 +3827,7 @@ body::-webkit-scrollbar-thumb {
     height: 10vw;
     bottom: 5vw;
     right: 5vw;
+    background-size: 6vw 6vw;
   }
   .bg-particle {
     width: 100%;
